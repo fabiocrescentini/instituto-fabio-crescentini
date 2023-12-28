@@ -1,8 +1,23 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Merriweather_Sans, Lato, Source_Sans_3 } from 'next/font/google'
+
 import '../styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const merriweather = Merriweather_Sans({
+  subsets: ['latin'],
+  variable: '--font-merriweather',
+})
+const lato = Lato({
+  subsets: ['latin'],
+  variable: '--font-lato',
+  weight: '700',
+})
+
+const source = Source_Sans_3({
+  subsets: ['latin'],
+  variable: '--font-source',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +30,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-BR">
+      <body
+        className={
+          (inter.className,
+          merriweather.className,
+          lato.className,
+          source.className)
+        }
+      >
+        {children}
+      </body>
     </html>
   )
 }
