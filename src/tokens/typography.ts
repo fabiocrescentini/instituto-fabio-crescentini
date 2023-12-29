@@ -18,6 +18,8 @@ export const typography = {
     extraMedium: '650',
     bold: '700',
     extraBold: '750',
+    ultrabold: '800',
+    ultimate: '900',
   },
   lineHeights: {
     heading: '1.25',
