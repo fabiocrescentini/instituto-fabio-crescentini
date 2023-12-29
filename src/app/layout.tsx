@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter, Merriweather_Sans, Lato, Source_Sans_3 } from 'next/font/google'
 
 import '../styles/globals.css'
+import { Header } from '@/components/header'
+import { Providers } from './providers'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const merriweather = Merriweather_Sans({
@@ -11,7 +13,7 @@ const merriweather = Merriweather_Sans({
 const lato = Lato({
   subsets: ['latin'],
   variable: '--font-lato',
-  weight: '700',
+  weight: ['100', '300', '700', '900'],
 })
 
 const source = Source_Sans_3({
@@ -30,16 +32,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
-      <body
-        className={
-          (inter.className,
-          merriweather.className,
-          lato.className,
-          source.className)
-        }
-      >
-        {children}
+    <html
+      lang="pt-BR"
+      className={`${inter.variable} ${lato.variable} ${source.variable} ${merriweather.variable} font-sans`}
+    >
+      <body>
+        <Header />
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
