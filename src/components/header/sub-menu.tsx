@@ -58,8 +58,8 @@ export function SubMenu() {
           <div
             className={`${
               pageActive
-                ? "content-[''] bg-yellow-400 h-[2px] absolute w-10 lg:w-[100%] left-0 -bottom-[5px] "
-                : "after:content-[''] after:bg-yellow-400 after:h-[2px] after:absolute after:w-[0%] after:left-0 after:-bottom-[5px] after:duration-300 group-hover:after:w-10 lg:w-[100%]"
+                ? "content-[''] bg-yellow-400 h-[2px] absolute w-[100%] left-0 -bottom-[5px] "
+                : "after:content-[''] after:bg-yellow-400 after:h-[2px] after:absolute after:w-[0%] after:left-0 after:-bottom-[5px] after:duration-300 group-hover:after:w-[100%]"
             }`}
           />
         </MenuButton>
