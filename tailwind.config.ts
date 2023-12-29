@@ -11,6 +11,13 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {},
+      container: {
+        center: true,
+        padding: {
+          default: '1rem',
+          sm: '2rem',
+        },
+      },
     },
 
     colors: { ...colors, current: 'currentColor' },

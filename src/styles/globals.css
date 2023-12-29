@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .bg-transparent {
+    background-color: transparent;
+  }
+
+  .text-transparent {
+    color: transparent
+  }
+
+}
