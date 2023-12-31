@@ -4,6 +4,7 @@ import { Inter, Merriweather_Sans, Lato, Source_Sans_3 } from 'next/font/google'
 import '../styles/globals.css'
 import { Header } from '@/components/header'
 import { Providers } from './providers'
+import { Footer } from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const merriweather = Merriweather_Sans({
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body>
         <Header />
         <Providers>{children}</Providers>
+        <Footer />
       </body>
     </html>
   )
