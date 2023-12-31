@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scroll-behavior: smooth !important;
+  }
+
+  body {
+    @apply bg-white;
+  }
+
+}
+
 @layer utilities {
   .bg-transparent {
     background-color: transparent;

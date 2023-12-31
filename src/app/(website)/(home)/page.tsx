@@ -1,7 +1,13 @@
 export default function Home() {
   return (
-    <h1 className="font-source text-xl font-medium text-[#8F8F8F]">
-      b1 - Source Sans Pro SemiBold 20
-    </h1>
+    <main>
+      <section className="h-screen bg-white">
+        <h1>Pagina Home</h1>
+        <h1>section 1</h1>
+      </section>
+      <section className="h-screen bg-yellow-400">
+        <h1>section 1</h1>
+      </section>
+    </main>
   )
 }
