@@ -10,7 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        radial: "url('/home/bg-radial.png')",
+        banner: "url('/home/banner.png')",
+      },
       container: {
         center: true,
         padding: {
