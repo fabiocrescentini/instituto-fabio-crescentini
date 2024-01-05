@@ -9,12 +9,12 @@ export function RoundIcon({ href, icon: Icon }: RoundIconProps) {
     <div className="group transition-all duration-300 ease-in-out">
       <Link
         href={href}
-        className="h-8 w-8 flex justify-center items-center rounded-full bg-yellow-50 group-hover:bg-red-300 transition-all duration-300 ease-in-out"
+        className="h-8 w-8 flex justify-center items-center rounded-full bg-yellow-50"
         target="_blank"
       >
         <Icon
           size={20}
-          className="text-red-700 group-hover:text-yellow-50 transition-all duration-300 ease-in-out"
+          className="text-red-700 group-hover:text-red-300 transition-all duration-300 ease-in-out"
         />
       </Link>
     </div>
