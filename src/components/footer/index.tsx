@@ -8,7 +8,7 @@ import { LinkFooter } from './link-footer'
 
 export function Footer() {
   return (
-    <footer className="w-full h-auto bg-red-700 py-14">
+    <footer className="w-full h-auto bg-red-700 py-14 z-40">
       <div className=" container px-5  h-full flex justify-between">
         <div className="flex after:ml-10 after:content-[''] after:w-[1px] after:h-full after:bg-red-200">
           <div className="flex flex-col space-y-5 items-center justify-center ">

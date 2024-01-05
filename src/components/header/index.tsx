@@ -7,7 +7,7 @@ import { SubMenu } from './sub-menu'
 
 export function Header() {
   return (
-    <header className="fixed top-0 w-full h-36 flex items-center bg-red-700 shadow-sm">
+    <header className="fixed top-0 w-full h-32 flex items-center bg-red-700 shadow-sm z-30">
       <div className="container px-5 flex items-center justify-between gap-5">
         <Link href="/">
           <Logo />
