@@ -17,14 +17,12 @@ export default function Home() {
             Instituto Fábio Crescentini
           </h1>
           <p className="max-w-[630px] mt-5 font-source text-blue text-lg font-medium leading-heading">
-            A excelência é um valor fundamental para nós. Buscamos
-            constantemente atualizar nosso conhecimento sobre os avanços mais
-            recentes em nossa área de atuação e estamos sempre prontos para
-            aplicar as melhores práticas clínicas.
+            A busca pela excelência é o alicerce do nosso compromisso. Nos
+            mantemos atualizados com as mais recentes inovações em nossa área,
+            aplicando as melhores práticas clínicas para garantir um cuidado de
+            qualidade.
           </p>
-          <p className="max-w-[650px] font-source text-blue text-lg font-medium">
-            Nosso compromisso com a excelência se estende além do consultório.
-          </p>
+
           <div className=" mt-12 bg-red-700 flex items-center justify-center w-[294px] rounded-full px-[1.875rem] py-[0.75rem] gap-2">
             <span className="font-merriweather font-bold text-yellow-100 text-md">
               Agendar uma consulta
@@ -32,7 +30,7 @@ export default function Home() {
             <FaWhatsapp size={25} className="text-yellow-100" />
           </div>
           <div className="w-full flex justify-center mt-24">
-            <div className=" shadow-md rounded-[1.25rem] w-11/12 h-auto bg-white flex justify-around items-center py-6 px-5">
+            <div className=" shadow-md rounded-[1.25rem] w-10/12 h-auto bg-white flex justify-around items-center py-6 px-5">
               <div className="flex flex-col items-center ">
                 <h4 className="text-red-200 font-inter text-[2.5rem] font-medium">
                   4
@@ -87,7 +85,7 @@ export default function Home() {
         </div>
         <div className="h-full container mt-14">
           <div className="bg-radial bg-cover bg-center bg-no-repeat ">
-            <div className=" flex items-start justify-around">
+            <div className=" flex items-start justify-around px-20">
               <div className="flex flex-col items-center h-auto w-44">
                 <Image
                   src="/sistema-digestivo/figado.svg"
