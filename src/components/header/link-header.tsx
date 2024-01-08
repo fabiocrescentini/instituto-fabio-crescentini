@@ -31,31 +31,5 @@ export function LinkHeader({ text, href, handleClick }: LinkHeaderProps) {
         }`}
       />
     </Link>
-    // <div className="group ">
-    //   <Link
-    //     href={href}
-    //     onClick={() => handleClick}
-    //     className=" font-lato font-bold text-lg group-hover:relative"
-    //   >
-    //     <span
-    //       className={`${
-    //         pathname === href
-    //           ? 'text-yellow-400'
-    //           : 'text-yellow-100  group-hover:text-yellow-400'
-    //       }`}
-    //     >
-    //       {text}
-    //     </span>
-    //     <div
-    //       className={`${
-    //         pathname === href
-    //           ? ' bg-yellow-400 h-[2px]  w-[100%] left-0 -bottom-[5px]'
-    //           : 'bg-transparent after:bg-yellow-400 after:h-[2px] group-hover:after:absolute after:w-[0%] after:left-0  after:-bottom-[5px] after:duration-300 group-hover:after:w-[100%] group-hover:after:-bottom-[5px] '
-    //       } content-[''] h-[2px] -bottom-[5px]`}
-    //     >
-    //       {' '}
-    //     </div>
-    //   </Link>
-    // </div>
   )
 }
