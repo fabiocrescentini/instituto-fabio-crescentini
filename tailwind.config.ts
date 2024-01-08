@@ -12,7 +12,10 @@ const config: Config = {
     extend: {
       backgroundImage: {
         radial: "url('/home/bg-radial.png')",
+        radial2: "url('/home/bg-radial-and-img.png')",
+        gradient: "url('/home/bg-gradient.png')",
         banner: "url('/home/banner.png')",
+        banner2: "url('/home/estetoscopio.png')",
       },
       container: {
         center: true,
