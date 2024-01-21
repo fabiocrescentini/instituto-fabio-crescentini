@@ -8,12 +8,14 @@ import { LinkFooter } from './link-footer'
 
 export function Footer() {
   return (
-    <footer className="w-full h-auto bg-red-700 py-14 z-40">
-      <div className=" container px-5  h-full flex justify-between">
-        <div className="flex after:ml-10 after:content-[''] after:w-[1px] after:h-full after:bg-red-200">
-          <div className="flex flex-col space-y-5 items-center justify-center ">
-            <Logo />
-            <div className="hidden lg:flex lg:space-x-1.5">
+    <footer className="w-full h-auto bg-red-700 py-10 lg:py-14 z-40">
+      <div className=" lg:container px-5 h-full flex flex-col items-center lg:items-stretch  lg:flex-row justify-between">
+        <div className="flex  justify-center items-center pt-6 lg:pt-0 ml-0 lg:after:ml-10 lg:after:content-[''] lg:after:w-[1px] lg:after:h-full lg:after:bg-red-200 order-2 lg:order-1">
+          <div className="flex flex-col space-y-6 items-center justify-center ">
+            <div className=" order-2 lg:order-1 pt-5">
+              <Logo />
+            </div>
+            <div className="flex space-x-1.5 order-1 lg:order-2">
               <RoundIcon icon={FaInstagram} href="https://g1.globo.com/" />
               <RoundIcon icon={FaYoutube} href="https://g1.globo.com/" />
               <RoundIcon icon={FaFacebookF} href="https://g1.globo.com/" />
@@ -22,8 +24,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex justify-evenly items-baseline flex-wrap w-full space-y-5  ">
-          <div className="ml-10 space-y-4 ">
+        <div className="flex flex-col lg:flex-row text-center lg:text-left justify-evenly items-center lg:items-baseline lg:flex-wrap w-full space-y-6 order-1 lg:order-2 ">
+          <div className="lg:ml-10 space-y-4 ">
             <div className="flex gap-2 items-center text-yellow-400 font-merriweather text-md font-bold">
               <FaLocationDot size={20} />
               <h3>Unidade - São Paulo</h3>
@@ -45,7 +47,7 @@ export function Footer() {
                 </span>
               </div>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="hidden lg:flex gap-2 items-center">
               <AiOutlineMail size={20} className="text-yellow-400" />
 
               <span className="font-lato text-xxs font-medium text-yellow-100">
@@ -54,7 +56,7 @@ export function Footer() {
             </div>
           </div>
           <div className="space-y-4 ">
-            <div className="flex gap-2 items-center text-yellow-400 font-merriweather text-md font-bold">
+            <div className="flex gap-2 justify-center lg:justify-stretch items-center text-yellow-400 font-merriweather text-md font-bold">
               <FaLocationDot size={20} />
               <h3>Unidade - Santos</h3>
             </div>
@@ -82,7 +84,14 @@ export function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col space-y-1.5 ">
+          <div className="flex lg:hidden gap-2 items-center">
+            <AiOutlineMail size={20} className="text-yellow-400" />
+
+            <span className="font-lato text-xxs font-medium text-yellow-100">
+              contato@institutofabiocrescentini.com.br
+            </span>
+          </div>
+          <div className="flex flex-col space-y-4 lg:space-y-1.5 items-center lg:items-end border-y-[1px] border-red-200 py-6 lg:border-none ">
             <LinkFooter href="/" text="Início" />
             <LinkFooter href="/sobre" text="Sobre" />
             <LinkFooter href="/especialidades/hepatologia" text="Hepatologia" />
