@@ -16,7 +16,16 @@ const config: Config = {
         gradient: "url('/home/bg-gradient.png')",
         banner: "url('/home/banner.png')",
         banner2: "url('/home/estetoscopio.png')",
+        bannerSobre: "url('/sobre/banner.png')",
+        radialSobre: "url('/sobre/radialSobre.png')",
+        logoTopSobre: "url('/sobre/logo-top-banner.png')",
+        logoBottomSobre: "url('/sobre/logo-bottom-banner.png')",
+        bannerEspecialidades: "url('/especialidades/banner.png')",
+        gradientEspecialidades: "url('/especialidades/gradient.png')",
+        bannerSectionEspecialidades:
+          "url('/especialidades/banner-section.png')",
       },
+
       container: {
         center: true,
         padding: {
