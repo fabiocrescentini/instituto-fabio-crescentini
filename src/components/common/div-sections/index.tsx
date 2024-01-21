@@ -10,8 +10,8 @@ export function DivSections() {
       <path
         d="M1 1L1401 1"
         stroke="url(#paint0_linear_142_13882)"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
       <defs>
         <linearGradient
@@ -22,9 +22,9 @@ export function DivSections() {
           y2="1.0002"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9E183F" stop-opacity="0" />
-          <stop offset="0.490013" stop-color="#9E183F" />
-          <stop offset="1" stop-color="#9E183F" stop-opacity="0" />
+          <stop stopColor="#9E183F" stopOpacity="0" />
+          <stop offset="0.490013" stopColor="#9E183F" />
+          <stop offset="1" stopColor="#9E183F" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

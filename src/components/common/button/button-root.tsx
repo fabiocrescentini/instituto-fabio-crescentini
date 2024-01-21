@@ -7,8 +7,8 @@ const button = tv({
   variants: {
     variant: {
       default: [
-        'bg-red-700 flex items-center justify-center max-h-12 rounded-full px-[1.875rem] py-[0.75rem] gap-2',
-        'font-merriweather font-bold text-yellow-100 text-md',
+        'bg-red-700 flex items-center justify-center max-h-12 rounded-full px-[1.5rem] lg:px-[1.875rem] py-[0.625rem] lg:py-[0.75rem] gap-2',
+        'font-merriweather font-bold text-yellow-100 text-sm lg:text-md',
         'group-hover:bg-red-300',
         'transition-all duration-300 ease-in-out',
       ],
