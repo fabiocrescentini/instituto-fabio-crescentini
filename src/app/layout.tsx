@@ -40,9 +40,11 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${inter.variable} ${lato.variable} ${source.variable} ${merriweather.variable} font-sans`}
     >
-      <body>
+      <body suppressHydrationWarning={true}>
         <Header />
-        <Providers>{children}</Providers>
+        {/* <Providers> */}
+        {children}
+        {/* </Providers> */}
         <Footer />
       </body>
     </html>
