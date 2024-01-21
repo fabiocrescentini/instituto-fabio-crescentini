@@ -7,6 +7,7 @@ export function Logo() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      className="w-[100px] h-[74px] lg:w-[150px] lg:h-[110px]"
     >
       <path fill="url(#pattern0)" d="M0 0H150V110H0z" />
       <defs>
