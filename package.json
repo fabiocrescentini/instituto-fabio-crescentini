@@ -13,11 +13,14 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@next/third-parties": "^14.0.5-canary.58",
     "framer-motion": "^10.16.16",
+    "hamburger-react": "^2.5.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+    "react-youtube": "^10.1.0",
     "tailwind-variants": "^0.1.20"
   },
   "devDependencies": {
