@@ -5,8 +5,21 @@ import { ArrowRight } from '@/components/common/icons/arrow-right'
 import { SectionInfo } from '@/components/sections/info'
 import { FaWhatsapp } from 'react-icons/fa'
 import Image from 'next/image'
+import { api } from '@/data/api'
+import { IAwards } from '@/data/types/awards'
 
-export default function Sobre() {
+async function getAwards(): Promise<IAwards[]> {
+  const response = await api('/awards', {
+    next: {
+      revalidate: 60 * 60 * 2, // 2 hour
+    },
+  })
+  const awards = await response.json()
+  return awards
+}
+
+export default async function Sobre() {
+  const awards = await getAwards()
   return (
     <main className="w-sreen min-h-screen">
       <section className="h-auto bg-bannerSobre bg-cover bg-no-repeat mt-32">
@@ -17,7 +30,7 @@ export default function Sobre() {
         </div>
         <DivSections />
       </section>
-      <SectionInfo />
+      <SectionInfo awards={awards} />
       <section className="h-auto bg-radial bg-cover bg-center bg-no-repeat">
         <div className="bg-logoTopSobre bg-no-repeat bg-left-top">
           <div className="bg-logoBottomSobre bg-no-repeat bg-right-bottom">
