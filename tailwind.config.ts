@@ -24,6 +24,7 @@ const config: Config = {
         gradientEspecialidades: "url('/especialidades/gradient.png')",
         bannerSectionEspecialidades:
           "url('/especialidades/banner-section.png')",
+        line: "url('/line.png')",
       },
 
       container: {
