@@ -6,7 +6,7 @@ import { SectionInfo } from '@/components/sections/info'
 import { FaWhatsapp } from 'react-icons/fa'
 import Image from 'next/image'
 
-import { awards } from '@/data/premios'
+import { awards } from '@/data/awards'
 
 export default function Sobre() {
   const awardsArray = awards

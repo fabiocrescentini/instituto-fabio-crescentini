@@ -8,7 +8,7 @@ import { SectionEspecialidades } from '@/components/sections/especialidades'
 import { SectionInfo } from '@/components/sections/info'
 import { SectionRecomendation } from '@/components/sections/recomendation'
 
-import { awards } from '@/data/premios'
+import { awards } from '@/data/awards'
 import { recommendations } from '@/data/recommendations'
 
 import { Metadata } from 'next'
