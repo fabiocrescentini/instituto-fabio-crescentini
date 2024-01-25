@@ -8,7 +8,7 @@ import { Button } from '@/components/common/button'
 import Image from 'next/image'
 
 import { Acordeon } from '@/components/common/acordeon'
-import { ArrowRight } from '@/components/common/icons/arrow-right'
+import { SectionEspecialidades } from '@/components/sections/especialidades'
 
 export default function Hepatologia() {
   return (
@@ -22,11 +22,14 @@ export default function Hepatologia() {
             NOSSAS ESPECIALIDADES
           </p>
         </div>
-        <DivSections />
+        <div>
+          <DivSections />
+          <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
+        </div>
       </section>
       <section className="h-auto bg-gradientEspecialidades bg-center bg-cover bg-no-repeat">
-        <div className="container px-5 py-20 grid grid-cols-1 lg:grid-cols-2 gap-5">
-          <div className=" w-full lg:w-[500px]">
+        <div className="container px-5 py-20 grid grid-cols-1 lg:grid-cols-2 gap-5 ">
+          <div className=" w-full lg:w-[50%]">
             <Video videoId="JwlhvApRQ9c" />
           </div>
           <div className="w-[auto] flex-col space-y-8 text-center lg:text-left">
@@ -51,7 +54,10 @@ export default function Hepatologia() {
             </div>
           </div>
         </div>
-        <DivSections />
+        <div>
+          <DivSections />
+          <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
+        </div>
       </section>
       <section>
         <div className="container  flex flex-col items-center px-5  py-16 ">
@@ -98,14 +104,17 @@ export default function Hepatologia() {
             </div>
           </div>
         </div>
-        <DivSections />
+        <div>
+          <DivSections />
+          <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
+        </div>
       </section>
       <section className="h-auto bg-bannerSectionEspecialidades bg-no-repeat bg-right">
-        <div className="container px-5 pt-16 pb-24">
+        <div className="container px-5 pt-16 pb-16">
           <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
             Dúvidas Frequentes
           </h2>
-          <div className="py-10 flex flex-col space-y-10">
+          <div className="py-10 flex flex-col space-y-10 text-center lg:text-left">
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
                 O consumo moderado de álcool é seguro para quem possui doenças
@@ -163,7 +172,7 @@ export default function Hepatologia() {
               </p>
             </div>
           </div>
-          <div className="w-full flex justify-center pt-16">
+          <div className="w-full flex justify-center pt-4 lg:pt-16">
             <div className="flex pt-3 justify-center lg:justify-start">
               <Button.Root href="#">
                 <Button.Text>Agendar uma consulta</Button.Text>
@@ -172,109 +181,17 @@ export default function Hepatologia() {
             </div>
           </div>
         </div>
-        <DivSections />
-      </section>
-      <section className="h-auto py-12 ">
-        <div className="container px-5 flex flex-col items-center justify-center">
-          <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
-            Nossas Especialidades
-          </h2>
-
-          <p className="pt-5 font-source text-blue text-lg font-medium leading-heading text-center lg:text-left">
-            Somos especialistas em estudar, diagnosticar e tratar doenças do
-            <span className="text-red-200">Sistema Digestivo</span>
-          </p>
-        </div>
-        <div className="h-full container mt-14">
-          <div className="bg-radial bg-cover bg-center bg-no-repeat ">
-            <div className=" flex flex-wrap items-start justify-around  lg:px-20">
-              <div className="flex flex-col items-center h-auto w-44 ">
-                <Image
-                  src="/sistema-digestivo/figado.svg"
-                  alt="imagem de um figado"
-                  width={130}
-                  height={130}
-                  className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
-                />
-                <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                  Hepatologia
-                </span>
-              </div>
-              <div className="flex flex-col items-center h-auto w-44">
-                <Image
-                  src="/sistema-digestivo/pancreas.svg"
-                  alt="imagem de um figado"
-                  width={130}
-                  height={130}
-                  className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
-                />
-                <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                  Doenças do Pâncreas e via biliar
-                </span>
-              </div>
-              <div className="flex flex-col items-center h-auto w-44">
-                <Image
-                  src="/sistema-digestivo/aparelho-digestivo.svg"
-                  alt="imagem de um figado"
-                  width={130}
-                  height={130}
-                  className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
-                />
-                <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                  Cirurgia do Aparelho Digestivo
-                </span>
-              </div>
-              <div className="flex flex-col items-center h-auto w-44">
-                <Image
-                  src="/sistema-digestivo/estomago.svg"
-                  alt="imagem de um figado"
-                  width={130}
-                  height={130}
-                  className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
-                />
-                <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                  Gastroenterologia
-                </span>
-              </div>
-            </div>
-            <div className="px-5">
-              <div className="rounded-[0.625rem] mt-14 shadow-card bg-white  h-auto w-full flex flex-col lg:flex-row">
-                <Image
-                  src="/home/section-2.png"
-                  alt="imagem de um figado"
-                  width={508}
-                  height={416}
-                  quality={80}
-                />
-                <div className="flex-1 py-4 lg:pt-[3.75rem] px-4  lg:pb-5 lg:pl-[3.75rem]">
-                  <h4 className="text-red-700 font-merriweather text-center lg:text-left font-bold text-xl">
-                    Hepatologia - Doenças do Fígado{' '}
-                  </h4>
-                  <p className="text-blue font-source font-light text-sm leading-heading lg:pr-[3.75rem] mt-3 text-center lg:text-left">
-                    A Hepatologia no Instituto Dr. Fábio Crescentini representa
-                    uma área de especialização dedicada ao estudo, diagnóstico e
-                    tratamento de doenças relacionadas ao fígado. Sob a
-                    liderança do renomado Dr. Fábio Crescentini, nosso instituto
-                    se destaca na abordagem abrangente e avançada para as
-                    condições hepáticas, visando oferecer aos pacientes cuidados
-                    de qualidade e soluções eficazes.
-                  </p>
-                  <div className="flex mt-8 lg:mr-12 flex-wrap gap-2 justify-between ">
-                    <Button.Root href="#">
-                      <Button.Text>Saiba mais</Button.Text>
-                      <Button.Icon icon={ArrowRight} />
-                    </Button.Root>
-                    <Button.Root href="#">
-                      <Button.Text>Agendar uma consulta</Button.Text>
-                      <Button.Icon icon={FaWhatsapp} size={25} />
-                    </Button.Root>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div>
+          <DivSections />
+          <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
         </div>
       </section>
+      <SectionEspecialidades
+        urlImg="/especialidades/pancreas.png"
+        altImg="image de um pancreas"
+        title="Doenças do Pâncreas e Via Biliar"
+        description="No Instituto Dr. Fábio Crescentini, reconhecemos a importância vital do pâncreas e da via biliar para o funcionamento saudável do sistema digestivo. Nosso compromisso é oferecer diagnóstico preciso e tratamento eficaz para uma variedade de condições que afetam essas estruturas cruciais."
+      />
     </main>
   )
 }
