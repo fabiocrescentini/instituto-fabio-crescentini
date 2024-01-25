@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   title: 'Home',
 }
 
-export default function Home() {
-  const awardsArray = awards
-  const recommendationsArray = recommendations
+export default async function Home() {
+  const awardsArray = await awards
+  const recommendationsArray = await recommendations
   return (
     <main className="w-full min-h-screen py-0 ">
       <section className="mt-5 lg:mt-24 h-auto lg:bg-banner bg-cover bg-no-repeat ">

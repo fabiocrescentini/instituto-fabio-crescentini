@@ -20,7 +20,7 @@ export default function Sobre() {
         </div>
         <DivSections />
       </section>
-      <SectionInfo awards={awards} />
+      <SectionInfo awards={awardsArray} />
       <section className="h-auto bg-radial bg-cover bg-center bg-no-repeat">
         <div className="bg-logoTopSobre bg-no-repeat bg-left-top">
           <div className="bg-logoBottomSobre bg-no-repeat bg-right-bottom">
