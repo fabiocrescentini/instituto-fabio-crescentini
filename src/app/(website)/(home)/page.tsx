@@ -8,8 +8,9 @@ import { SectionEspecialidades } from '@/components/sections/especialidades'
 import { SectionInfo } from '@/components/sections/info'
 import { SectionRecomendation } from '@/components/sections/recomendation'
 
-import { api } from '@/data/api'
-import { IAwards } from '@/data/types/awards'
+import { awards } from '@/data/premios'
+import { recommendations } from '@/data/recommendations'
+
 import { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -18,32 +19,13 @@ import { FaInstagram, FaYoutube, FaFacebookF, FaWhatsapp } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
 import { MdOutlinePhoneIphone, MdEmail } from 'react-icons/md'
 
-async function getAwards(): Promise<IAwards[]> {
-  const response = await api('/awards', {
-    next: {
-      revalidate: 60 * 60 * 2, // 2 hour
-    },
-  })
-  const awards = await response.json()
-  return awards
-}
-async function getRecommendations() {
-  const response = await api('/recommendations', {
-    next: {
-      revalidate: 60 * 60 * 2, // 2 hour
-    },
-  })
-  const recommendations = await response.json()
-  return recommendations
-}
-
 export const metadata: Metadata = {
   title: 'Home',
 }
 
-export default async function Home() {
-  const awards = await getAwards()
-  const recommendations = await getRecommendations()
+export default function Home() {
+  const awardsArray = awards
+  const recommendationsArray = recommendations
   return (
     <main className="w-full min-h-screen py-0 ">
       <section className="mt-5 lg:mt-24 h-auto lg:bg-banner bg-cover bg-no-repeat ">
@@ -151,9 +133,9 @@ export default async function Home() {
                     de qualidade e soluções eficazes."
       />
 
-      <SectionInfo awards={awards} />
+      <SectionInfo awards={awardsArray} />
 
-      <SectionRecomendation recommendations={recommendations} />
+      <SectionRecomendation recommendations={recommendationsArray} />
       <section className="py-10 lg:py-28 bg-banner2 bg-right-bottom bg-no-repeat ">
         <div className="container px-5 flex flex-col items-center space-y-20">
           <h3 className="font-merriweather text-center lg:text-left text-xl lg:text-1xl text-red-700 font-bold">

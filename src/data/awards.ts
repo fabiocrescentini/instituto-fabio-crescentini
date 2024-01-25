@@ -1,6 +1,6 @@
 import { IAwards } from './types/awards'
 
-export const premios: IAwards[] = [
+export const awards: IAwards[] = [
   {
     title: 'Destaque em Doação de Órgãos',
     subTitle: '1 º Lugar em Transplante de Pâncreas',
