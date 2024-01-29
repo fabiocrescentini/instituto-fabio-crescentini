@@ -16,6 +16,11 @@ const button = tv({
         'group-hover:bg-red-300',
         'transition-all duration-300 ease-in-out',
       ],
+      green: [
+        'bg-[#25D366] text-yellow-50 h-auto w-auto p-1.5',
+        'group-hover:bg-green-300 group-hover:scale-110',
+        'transition-all duration-300 ease-in-out',
+      ],
     },
   },
   defaultVariants: {

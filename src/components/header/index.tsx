@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import { Logo } from './logo'
 import { LinkHeader } from './link-header'
@@ -13,18 +14,31 @@ export function Header() {
         <Link href="/">
           <Logo />
         </Link>
-        <nav className="hidden lg:flex lg:justify-around lg:gap-[3.75rem] lg:items-center  ">
+        <nav className="hidden lg:flex lg:justify-around lg:gap-[3.75rem] lg:items-center">
           <LinkHeader text="Início" href="/" />
-          {/* <LinkHeader text="Especialidades" href="/especialidades" /> */}
+
           <SubMenu />
           <LinkHeader text="Sobre" href="/sobre" />
-          <LinkHeader text="Contato" href="/contato" />
+
+          <LinkHeader text="Contato" href="/#contato" />
         </nav>
         <div className="hidden lg:flex lg:space-x-3">
-          <RoundIcon icon={FaInstagram} href="https://g1.globo.com/" />
-          <RoundIcon icon={FaYoutube} href="https://g1.globo.com/" />
-          <RoundIcon icon={FaFacebookF} href="https://g1.globo.com/" />
-          <RoundIcon icon={FaWhatsapp} href="https://g1.globo.com/" />
+          <RoundIcon
+            icon={FaInstagram}
+            href="https://www.instagram.com/InstitutoFabioCrescentini/"
+          />
+          <RoundIcon
+            icon={FaYoutube}
+            href="https://www.youtube.com/@fabiocrescentini1686"
+          />
+          <RoundIcon
+            icon={FaFacebookF}
+            href="https://www.facebook.com/InstitutoFabioCrescentini/"
+          />
+          <RoundIcon
+            icon={FaWhatsapp}
+            href="https://linktr.ee/drfabiocrescentini"
+          />
         </div>
         <MenuMob />
       </div>
