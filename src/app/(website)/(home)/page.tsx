@@ -123,6 +123,7 @@ export default function Home() {
       <SectionEspecialidades
         urlImg="/home/section-2.png"
         altImg="image de um figado"
+        urlLink="/especialidades/hepatologia"
         title="Hepatologia - Doenças do Fígado"
         description="A Hepatologia no Instituto Dr. Fábio Crescentini representa
                     uma área de especialização dedicada ao estudo, diagnóstico e

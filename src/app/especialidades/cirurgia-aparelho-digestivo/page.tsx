@@ -194,6 +194,7 @@ export default function Hepatologia() {
       </section>
       <SectionEspecialidades
         urlImg="/especialidades/gastroenterologia.png"
+        urlLink="/especialidades/gastroenterologia"
         altImg="image do aparelho digestivo"
         title="Gastroenterologia"
         description="No Instituto Dr. Fábio Crescentini, a excelência na Cirurgia do Aparelho Digestivo é uma missão que redefine padrões de cuidado. Sob a liderança visionária do Dr. Fábio Crescentini, nosso instituto é reconhecido por oferecer soluções cirúrgicas avançadas e personalizadas para uma variedade de condições gastrointestinais."

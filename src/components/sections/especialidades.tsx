@@ -10,6 +10,7 @@ interface SectionEspecialidadesProps {
   description: string
   urlImg: string
   altImg: string
+  urlLink: string
 }
 
 export function SectionEspecialidades({
@@ -17,6 +18,7 @@ export function SectionEspecialidades({
   description,
   urlImg,
   altImg,
+  urlLink,
 }: SectionEspecialidadesProps) {
   return (
     <section className="h-auto pt-12 ">
@@ -100,7 +102,7 @@ export function SectionEspecialidades({
                   {description}
                 </p>
                 <div className="flex mt-8 lg:mr-12 flex-wrap gap-2 justify-between ">
-                  <Button.Root href="/especialidades/hepatologia">
+                  <Button.Root href={urlLink}>
                     <Button.Text>Saiba mais</Button.Text>
                     <Button.Icon icon={ArrowRight} />
                   </Button.Root>

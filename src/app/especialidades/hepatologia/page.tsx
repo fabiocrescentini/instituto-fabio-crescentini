@@ -193,6 +193,7 @@ export default function Hepatologia() {
       </section>
       <SectionEspecialidades
         urlImg="/especialidades/pancreas.png"
+        urlLink="/especialidades/doencas-do-pancreas"
         altImg="image de um pancreas"
         title="Doenças do Pâncreas e Via Biliar"
         description="No Instituto Dr. Fábio Crescentini, reconhecemos a importância vital do pâncreas e da via biliar para o funcionamento saudável do sistema digestivo. Nosso compromisso é oferecer diagnóstico preciso e tratamento eficaz para uma variedade de condições que afetam essas estruturas cruciais."
