@@ -16,10 +16,22 @@ export function Footer() {
               <Logo />
             </div>
             <div className="flex space-x-1.5 order-1 lg:order-2">
-              <RoundIcon icon={FaInstagram} href="https://g1.globo.com/" />
-              <RoundIcon icon={FaYoutube} href="https://g1.globo.com/" />
-              <RoundIcon icon={FaFacebookF} href="https://g1.globo.com/" />
-              <RoundIcon icon={FaWhatsapp} href="https://g1.globo.com/" />
+              <RoundIcon
+                icon={FaInstagram}
+                href="https://www.instagram.com/InstitutoFabioCrescentini/"
+              />
+              <RoundIcon
+                icon={FaYoutube}
+                href="https://www.youtube.com/@fabiocrescentini1686"
+              />
+              <RoundIcon
+                icon={FaFacebookF}
+                href="https://www.facebook.com/InstitutoFabioCrescentini/"
+              />
+              <RoundIcon
+                icon={FaWhatsapp}
+                href="https://linktr.ee/drfabiocrescentini"
+              />
             </div>
           </div>
         </div>
@@ -100,7 +112,7 @@ export function Footer() {
               text="Doenças do Pâncreas e Via Biliar"
             />
             <LinkFooter
-              href="/especialidades/cirungia-do-aparelho-digestivo"
+              href="/especialidades/cirurgia-aparelho-digestivo"
               text="Cirurgia do Aparelho Digestivo"
             />
             <LinkFooter

@@ -101,7 +101,7 @@ export function MenuMob() {
                               >
                                 <Link
                                   href={
-                                    '/especialidades/cirurgia-do-aparelho-digestivo'
+                                    '/especialidades/cirurgia-aparelho-digestivo'
                                   }
                                 >
                                   Cirurgia do Aparelho Digestivo
@@ -123,7 +123,7 @@ export function MenuMob() {
                       </Accordion>
                     </li>
                     <li onClick={handleClose}>
-                      <LinkMenuMob text="Contato" href="#" />
+                      <LinkMenuMob text="Contato" href="/#contato" />
                     </li>
                   </ul>
                 </div>
@@ -132,22 +132,22 @@ export function MenuMob() {
                   <RoundIcon
                     variant="red"
                     icon={FaInstagram}
-                    href="https://g1.globo.com/"
+                    href="https://www.instagram.com/InstitutoFabioCrescentini/"
                   />
                   <RoundIcon
                     variant="red"
                     icon={FaYoutube}
-                    href="https://g1.globo.com/"
+                    href="https://www.youtube.com/@fabiocrescentini1686"
                   />
                   <RoundIcon
                     variant="red"
                     icon={FaFacebookF}
-                    href="https://g1.globo.com/"
+                    href="https://www.facebook.com/InstitutoFabioCrescentini/"
                   />
                   <RoundIcon
                     variant="red"
                     icon={FaWhatsapp}
-                    href="https://g1.globo.com/"
+                    href="https://linktr.ee/drfabiocrescentini"
                   />
                 </div>
               </motion.div>

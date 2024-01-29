@@ -82,19 +82,28 @@ export function SubMenu() {
           </MenuItem>
           <div className="w-full h-[1px] bg-gray-200" />
           <MenuItem className="group">
-            <Link href="#" className="group-hover:text-red-300">
+            <Link
+              href="/especialidades/doencas-do-pancreas"
+              className="group-hover:text-red-300"
+            >
               Doenças do Pâncreas e via biliar
             </Link>
           </MenuItem>
           <div className="w-full h-[1px] bg-gray-200" />
           <MenuItem className="group">
-            <Link href="#" className="group-hover:text-red-300">
+            <Link
+              href="/especialidades/cirurgia-aparelho-digestivo"
+              className="group-hover:text-red-300"
+            >
               Cirurgia do Aparelho Digestivo
             </Link>
           </MenuItem>
           <div className="w-full h-[1px] bg-gray-200" />
           <MenuItem className="group">
-            <Link href="#" className="group-hover:text-red-300">
+            <Link
+              href="/especialidades/gastroenterologia"
+              className="group-hover:text-red-300"
+            >
               Gastroenterologia
             </Link>
           </MenuItem>

@@ -8,12 +8,13 @@ interface LinkHeaderProps {
   href: string
   handleClick?: () => void
 }
+
 export function LinkHeader({ text, href, handleClick }: LinkHeaderProps) {
   const pathname = usePathname()
   return (
     <Link
       href={href}
-      className="relative group font-bold text-lg"
+      className="relative group font-bold text-lg "
       onClick={() => handleClick}
     >
       <span
@@ -26,7 +27,7 @@ export function LinkHeader({ text, href, handleClick }: LinkHeaderProps) {
       <div
         className={`${
           pathname === href
-            ? "content-[''] bg-yellow-400 h-[2px] absolute w-[100%] left-0 -bottom-[5px] "
+            ? "content-[''] bg-yellow-400 h-[2px] absolute w-[100%] left-0 -bottom-[5px] -z-10"
             : "after:content-[''] after:bg-yellow-400 after:h-[2px] after:absolute after:w-[0%] after:left-0 after:-bottom-[5px] after:duration-300 group-hover:after:w-[100%]"
         }`}
       />

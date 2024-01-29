@@ -6,16 +6,20 @@ import { DivSections } from '../common/div-sections'
 import { ArrowRight } from '@/components/common/icons/arrow-right'
 import { Carousel } from '../common/carousel'
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
+import { FaWhatsapp } from 'react-icons/fa'
 import { IAwards } from '@/data/types/awards'
 import { useRef } from 'react'
+import { usePathname } from 'next/navigation'
 
 interface SectionInfoProps {
   awards: IAwards[]
 }
 
 export function SectionInfo({ awards }: SectionInfoProps) {
+  const pathname = usePathname()
   const nextButtonRef = useRef(null)
   const prevButtonRef = useRef(null)
+
   return (
     <section className="h-auto bg-gradient bg-cover bg-no-repeat flex flex-col space-y-6 lg:space-y-10">
       <div className="pt-6 lg:pt-[3.69rem] container px-5 grid items-center grid-col-1 lg:grid-flow-col lg:items-start gap-6 lg:gap-24">
@@ -74,9 +78,17 @@ export function SectionInfo({ awards }: SectionInfoProps) {
             </p>
           </div>
           <div className="justify-center lg:justify-start flex pt-5">
-            <Button.Root href="#">
-              <Button.Text>Saiba mais</Button.Text>
-              <Button.Icon icon={ArrowRight} />
+            <Button.Root
+              href={
+                pathname === '/'
+                  ? '/sobre'
+                  : 'https://linktr.ee/drfabiocrescentini'
+              }
+            >
+              <Button.Text>
+                {pathname === '/' ? 'Saiba mais' : 'Agendar uma consulta'}
+              </Button.Text>
+              <Button.Icon icon={pathname === '/' ? ArrowRight : FaWhatsapp} />
             </Button.Root>
           </div>
         </div>

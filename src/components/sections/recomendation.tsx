@@ -46,7 +46,7 @@ export function SectionRecomendation({
         </div>
 
         <div className="pt-3">
-          <Button.Root href="#">
+          <Button.Root href="https://linktr.ee/drfabiocrescentini">
             <Button.Text>Agendar uma consulta</Button.Text>
             <Button.Icon icon={FaWhatsapp} size={25} />
           </Button.Root>

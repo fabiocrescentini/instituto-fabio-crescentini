@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import { Button } from '../common/button'
 import { ArrowRight } from '../common/icons/arrow-right'
@@ -25,7 +26,7 @@ export function SectionEspecialidades({
         </h2>
 
         <p className="pt-5 font-source text-blue text-lg font-medium leading-heading text-center lg:text-left">
-          Somos especialistas em estudar, diagnosticar e tratar doenças do
+          Somos especialistas em estudar, diagnosticar e tratar doenças do{' '}
           <span className="text-red-200">Sistema Digestivo</span>
         </p>
       </div>
@@ -99,11 +100,11 @@ export function SectionEspecialidades({
                   {description}
                 </p>
                 <div className="flex mt-8 lg:mr-12 flex-wrap gap-2 justify-between ">
-                  <Button.Root href="#">
+                  <Button.Root href="/especialidades/hepatologia">
                     <Button.Text>Saiba mais</Button.Text>
                     <Button.Icon icon={ArrowRight} />
                   </Button.Root>
-                  <Button.Root href="#">
+                  <Button.Root href="https://linktr.ee/drfabiocrescentini">
                     <Button.Text>Agendar uma consulta</Button.Text>
                     <Button.Icon icon={FaWhatsapp} size={25} />
                   </Button.Root>
