@@ -7,79 +7,93 @@ import { FaWhatsapp } from 'react-icons/fa'
 import Image from 'next/image'
 
 import { awards } from '@/data/awards'
+import { SectionUnits } from '@/components/sections/units'
+import { units } from '@/data/units'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Sobre',
+}
 
 export default function Sobre() {
   const awardsArray = awards
+  const unitsArray = units
   return (
     <main className="w-sreen min-h-screen">
-      <section className="h-auto bg-bannerSobre bg-cover bg-no-repeat mt-32">
-        <div className="flex justify-center py-32">
+      <section className="h-auto bg-bannerSobre bg-cover mt-20 bg-no-repeat lg:mt-32">
+        <div className="flex justify-center py-20 lg:py-32">
           <h1 className="font-merriweather text-2xl text-red-700 font-bold">
             Sobre
           </h1>
         </div>
-        <DivSections />
+        <div>
+          <DivSections />
+          <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
+        </div>
       </section>
       <SectionInfo awards={awardsArray} />
       <section className="h-auto bg-radial bg-cover bg-center bg-no-repeat">
         <div className="bg-logoTopSobre bg-no-repeat bg-left-top">
           <div className="bg-logoBottomSobre bg-no-repeat bg-right-bottom">
             <div className="flex flex-col items-center justify-center pt-20">
-              <h2 className="font-merriweather text-1xl text-red-700 font-bold">
+              <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
                 Nossas Especialidades
               </h2>
-              <p className="pt-5 font-source text-blue text-lg font-medium leading-heading">
-                Somos especialistas em estudar, diagnosticar e tratar doenças do
+
+              <p className="pt-5 font-source text-blue text-lg font-medium leading-heading text-center lg:text-left">
+                Somos especialistas em estudar, diagnosticar e tratar doenças do{' '}
                 <span className="text-red-200">Sistema Digestivo</span>
               </p>
             </div>
             <div className="h-auto mt-14">
-              <div className="container">
-                <div className=" flex items-start justify-around px-20">
-                  <div className="flex flex-col items-center h-auto w-44">
-                    <Image
-                      src="/sistema-digestivo/figado.svg"
-                      alt="imagem de um figado"
-                      width={130}
-                      height={130}
-                    />
-                    <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                      Hepatologia
-                    </span>
-                  </div>
-                  <div className="flex flex-col items-center h-auto w-44">
-                    <Image
-                      src="/sistema-digestivo/pancreas.svg"
-                      alt="imagem de um figado"
-                      width={130}
-                      height={130}
-                    />
-                    <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                      Doenças do Pâncreas e via biliar
-                    </span>
-                  </div>
-                  <div className="flex flex-col items-center h-auto w-44">
-                    <Image
-                      src="/sistema-digestivo/aparelho-digestivo.svg"
-                      alt="imagem de um figado"
-                      width={130}
-                      height={130}
-                    />
-                    <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                      Cirurgia do Aparelho Digestivo
-                    </span>
-                  </div>
-                  <div className="flex flex-col items-center h-auto w-44">
-                    <Image
-                      src="/sistema-digestivo/estomago.svg"
-                      alt="imagem de um figado"
-                      width={130}
-                      height={130}
-                    />
-                    <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                      Gastroenterologia
-                    </span>
-                  </div>
+              <div className=" flex flex-wrap items-start justify-around  lg:px-20">
+                <div className="flex flex-col items-center h-auto w-44 ">
+                  <Image
+                    src="/sistema-digestivo/figado.svg"
+                    alt="imagem de um figado"
+                    width={130}
+                    height={130}
+                    className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
+                  />
+                  <span className="text-red-200 font-merriweather font-bold text-sm text-center">
+                    Hepatologia
+                  </span>
+                </div>
+                <div className="flex flex-col items-center h-auto w-44">
+                  <Image
+                    src="/sistema-digestivo/pancreas.svg"
+                    alt="imagem de um figado"
+                    width={130}
+                    height={130}
+                    className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
+                  />
+                  <span className="text-red-200 font-merriweather font-bold text-sm text-center">
+                    Doenças do Pâncreas e via biliar
+                  </span>
+                </div>
+                <div className="flex flex-col items-center h-auto w-44">
+                  <Image
+                    src="/sistema-digestivo/aparelho-digestivo.svg"
+                    alt="imagem de um figado"
+                    width={130}
+                    height={130}
+                    className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
+                  />
+                  <span className="text-red-200 font-merriweather font-bold text-sm text-center">
+                    Cirurgia do Aparelho Digestivo
+                  </span>
+                </div>
+                <div className="flex flex-col items-center h-auto w-44">
+                  <Image
+                    src="/sistema-digestivo/estomago.svg"
+                    alt="imagem de um figado"
+                    width={130}
+                    height={130}
+                    className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
+                  />
+                  <span className="text-red-200 font-merriweather font-bold text-sm text-center">
+                    Gastroenterologia
+                  </span>
                 </div>
               </div>
             </div>
@@ -93,20 +107,21 @@ export default function Sobre() {
             </div>
             <div className="mt-14">
               <DivSections />
+              <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
             </div>
           </div>
         </div>
       </section>
       <section className="h-auto pt-16">
         <div className="container px-5 flex flex-col justify-center items-center">
-          <h2 className="font-merriweather text-1xl text-red-700 font-bold">
+          <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
             Formação Acadêmica
           </h2>
         </div>
-        <div className="pt-10 container  flex">
-          <div className="flex flex-col space-y-5">
+        <div className="pt-10 container flex flex-col lg:flex-row text-center lg:text-left">
+          <div className="flex flex-col items-center lg:items-start space-y-5 ">
             <DivItem />
-            <div className="pl-2 w-[17.063rem]">
+            <div className="pl-2 lg:w-[17.063rem]">
               <p className="font-merriweather font-bold text-sm text-red-200">
                 Graduação em Medicina
               </p>
@@ -129,18 +144,18 @@ export default function Sobre() {
               <p className="font-merriweather font-bold text-sm text-red-200">
                 Transplante de Fígado Intervivos
               </p>
-              <p className="font-source font-light text-sm text-blue w-[17.063rem]">
+              <p className="font-source font-light text-sm text-blue lg:w-[17.063rem]">
                 Asan Medical Center, Coréia do Sul
               </p>
             </div>
           </div>
-          <div className="flex flex-col space-y-5">
+          <div className="flex flex-col space-y-5 items-center lg:items-start">
             <DivItem />
             <div className="pl-2">
               <p className="font-merriweather font-bold text-sm text-red-200">
                 Pós Graduação em Cirurgia Geral
               </p>
-              <p className="font-source font-light text-sm text-blue  w-[17.063rem]">
+              <p className="font-source font-light text-sm text-blue  lg:w-[17.063rem]">
                 Faculdade de Medicina de São Paulo (FMUSP), Brasil
               </p>
             </div>
@@ -159,18 +174,18 @@ export default function Sobre() {
               <p className="font-merriweather font-bold text-sm text-red-200">
                 Transplante Hepático Intervivos
               </p>
-              <p className="font-source font-light text-sm text-blue w-[17.063rem]">
+              <p className="font-source font-light text-sm text-blue lg:w-[17.063rem]">
                 Chang Gung University, China
               </p>
             </div>
           </div>
-          <div className="flex flex-col space-y-5">
+          <div className="flex flex-col space-y-5 items-center lg:items-start">
             <DivItem />
             <div className="pl-2">
               <p className="font-merriweather font-bold text-sm text-red-200">
                 Pós Graduação - Cirurgia do Aparellho Digestivo
               </p>
-              <p className="font-source font-light text-sm text-blue  w-[17.063rem]">
+              <p className="font-source font-light text-sm text-blue  lg:w-[17.063rem]">
                 Faculdade de Medicina de São Paulo (FMUSP), Brasil
               </p>
             </div>
@@ -189,7 +204,7 @@ export default function Sobre() {
               <p className="font-merriweather font-bold text-sm text-red-200">
                 Programa de Educação Médica Continuada
               </p>
-              <p className="font-source font-light text-sm text-blue w-[17.063rem]">
+              <p className="font-source font-light text-sm text-blue lg:w-[17.063rem]">
                 Instituto Israelista de Ensino e Pesquisa Albert Eisntein
                 (IIEPAE), Brasil
               </p>
@@ -198,14 +213,15 @@ export default function Sobre() {
         </div>
         <div className="pt-20">
           <DivSections />
+          <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
         </div>
       </section>
       <section className="h-auto py-16">
         <div className="container px-5 flex flex-col justify-center items-center">
-          <h2 className="font-merriweather text-1xl text-red-700 font-bold">
+          <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
             Sobre o Instituto Fábio Crescentini
           </h2>
-          <div className="flex pt-24 gap-14">
+          <div className="flex flex-col lg:flex-row pt-10 lg:pt-24 gap-10 lg:gap-14 items-center lg:items-start">
             <Image
               src="/sobre/foto-instituto.png"
               alt="logo do instituto fabio crescentini"
@@ -215,7 +231,7 @@ export default function Sobre() {
               about="imagem instituto fabio crescentini"
             />
 
-            <div className="flex flex-col py-5 space-y-5">
+            <div className="flex flex-col lg:py-5 space-y-5 text-center lg:text-left">
               <p className="font-source font-light text-blue text-sm leading-heading">
                 Bem-vindo ao Instituto Dr. Fábio Crescentini, referência em
                 excelência na área de saúde do fígado, pâncreas e oncologia
@@ -232,8 +248,8 @@ export default function Sobre() {
                 humanizada, centrada no paciente, proporcionando conforto e
                 confiança durante toda a jornada de cuidados de saúde.
               </p>
-              <div className="flex">
-                <Button.Root href="#">
+              <div className="flex lg:justify-start justify-center pt-5 lg:pt-0">
+                <Button.Root href="https://linktr.ee/drfabiocrescentini">
                   <Button.Text>Agendar uma consulta</Button.Text>
                   <Button.Icon icon={FaWhatsapp} size={25} />
                 </Button.Root>
@@ -241,17 +257,13 @@ export default function Sobre() {
             </div>
           </div>
         </div>
-        <div className="pt-20">
+        <div className="pt-16 lg:pt-20">
           <DivSections />
+          <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
         </div>
       </section>
-      <section className="h-screen py-16">
-        <div className="container px-5 flex flex-col justify-center items-center">
-          <h2 className="font-merriweather text-1xl text-red-700 font-bold">
-            Nossas Estruturas
-          </h2>
-        </div>
-      </section>
+
+      <SectionUnits units={unitsArray} />
     </main>
   )
 }

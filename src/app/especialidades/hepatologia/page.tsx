@@ -9,6 +9,11 @@ import Image from 'next/image'
 
 import { Acordeon } from '@/components/common/acordeon'
 import { SectionEspecialidades } from '@/components/sections/especialidades'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Hepatologia',
+}
 
 export default function Hepatologia() {
   return (
@@ -47,7 +52,7 @@ export default function Hepatologia() {
               eficazes.
             </p>
             <div className="flex pt-3 justify-center lg:justify-start">
-              <Button.Root href="#">
+              <Button.Root href="https://www.youtube.com/@fabiocrescentini1686">
                 <Button.Text>Acesse nosso Canal</Button.Text>
                 <Button.Icon icon={FaYoutube} />
               </Button.Root>
@@ -174,7 +179,7 @@ export default function Hepatologia() {
           </div>
           <div className="w-full flex justify-center pt-4 lg:pt-16">
             <div className="flex pt-3 justify-center lg:justify-start">
-              <Button.Root href="#">
+              <Button.Root href="https://linktr.ee/drfabiocrescentini">
                 <Button.Text>Agendar uma consulta</Button.Text>
                 <Button.Icon icon={FaWhatsapp} />
               </Button.Root>

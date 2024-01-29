@@ -1,6 +1,5 @@
 import { Button } from '@/components/common/button'
 
-import { CardRecommendation } from '@/components/common/card-recommendation'
 import { DivSections } from '@/components/common/div-sections'
 
 import { RoundIcon } from '@/components/common/round-icon'
@@ -23,9 +22,10 @@ export const metadata: Metadata = {
   title: 'Home',
 }
 
-export default async function Home() {
-  const awardsArray = await awards
-  const recommendationsArray = await recommendations
+export default function Home() {
+  const awardsArray = awards
+  const recommendationsArray = recommendations
+
   return (
     <main className="w-full min-h-screen py-0 ">
       <section className="mt-5 lg:mt-24 h-auto lg:bg-banner bg-cover bg-no-repeat ">
@@ -42,7 +42,7 @@ export default async function Home() {
             </p>
 
             <div className="pt-12 hidden lg:flex">
-              <Button.Root href="#">
+              <Button.Root href="https://linktr.ee/drfabiocrescentini">
                 <Button.Text>Agendar uma consulta</Button.Text>
                 <Button.Icon icon={FaWhatsapp} size={25} />
               </Button.Root>
@@ -64,9 +64,9 @@ export default async function Home() {
             <div className="bg-white w-full lg:w-10/12  rounded-[1.25rem] h-auto flex flex-col  lg:flex-row justify-around items-center py-5 shadow-md gap-4">
               <div className="flex justify-around items-center w-full h-full">
                 <div className="flex flex-col items-center ">
-                  <h4 className="text-red-200 font-inter text-xl lg:text-[2.5rem] font-medium">
+                  <h5 className="text-red-200 font-inter text-xl lg:text-[2.5rem] font-medium">
                     4
-                  </h4>
+                  </h5>
                   <p className="text-blue font-inter font-bold text-[0.75rem] lg:text-sm">
                     Especializações
                   </p>
@@ -77,9 +77,9 @@ export default async function Home() {
                 </div>
 
                 <div className="flex flex-col items-center">
-                  <h4 className="text-red-200 font-inter text-xl lg:text-[2.5rem]  font-medium">
+                  <h5 className="text-red-200 font-inter text-xl lg:text-[2.5rem]  font-medium">
                     20
-                  </h4>
+                  </h5>
                   <p className="text-blue font-inter font-bold text-[0.75rem] lg:text-sm">
                     Anos de Experiência
                   </p>
@@ -93,9 +93,9 @@ export default async function Home() {
               </div>
               <div className="flex justify-around items-center w-full h-full">
                 <div className="flex flex-col items-center">
-                  <h4 className="text-red-200 font-inter text-xl lg:text-[2.5rem] font-medium">
+                  <h5 className="text-red-200 font-inter text-xl lg:text-[2.5rem] font-medium">
                     +2000
-                  </h4>
+                  </h5>
                   <p className="text-blue font-inter font-bold text-[0.75rem] lg:text-sm">
                     Pacientes atendidos
                   </p>
@@ -104,9 +104,9 @@ export default async function Home() {
                   <div className="hidden lg:flex w-[0.125rem] h-full bg-gray-200 " />
                 </div>
                 <div className="flex flex-col items-center">
-                  <h4 className="text-red-200 font-inter text-xl lg:text-[2.5rem]  font-medium">
+                  <h5 className="text-red-200 font-inter text-xl lg:text-[2.5rem]  font-medium">
                     +2000
-                  </h4>
+                  </h5>
                   <p className="text-blue font-inter font-bold text-[0.75rem] lg:text-sm">
                     Cirurgias realizadas
                   </p>
@@ -136,13 +136,16 @@ export default async function Home() {
       <SectionInfo awards={awardsArray} />
 
       <SectionRecomendation recommendations={recommendationsArray} />
-      <section className="py-10 lg:py-28 bg-banner2 bg-right-bottom bg-no-repeat ">
+      <section
+        className="py-10 lg:py-28 bg-banner2 bg-right-bottom bg-no-repeat"
+        id="contato"
+      >
         <div className="container px-5 flex flex-col items-center space-y-20">
           <h3 className="font-merriweather text-center lg:text-left text-xl lg:text-1xl text-red-700 font-bold">
             Contato Instituto Fábio Crescentini
           </h3>
           <div className="flex w-full flex-col  lg:flex-row lg:flex-wrap justify-between gap-10 lg:gap-24 items-center lg:items-start">
-            <div className="flex flex-col space-y-5 w-full lg:w-auto">
+            <div className="flex flex-col space-y-5 w-full lg:w-auto ">
               <div className="flex justify-center lg:justify-start  items-center gap-2 font-merriweather font-bold text-red-700 text-lg lg:text-xl border-b-[1px] border-gray-200 w-full lg:w-auto">
                 <FaLocationDot size={20} className="h-5 lg:h-10" />
                 <h4>Unidade - São Paulo</h4>
@@ -214,22 +217,22 @@ export default async function Home() {
                     <RoundIcon
                       variant="red"
                       icon={FaInstagram}
-                      href="https://g1.globo.com/"
+                      href="https://www.instagram.com/InstitutoFabioCrescentini/"
                     />
                     <RoundIcon
                       variant="red"
                       icon={FaYoutube}
-                      href="https://g1.globo.com/"
+                      href="https://www.youtube.com/@fabiocrescentini1686"
                     />
                     <RoundIcon
                       variant="red"
                       icon={FaFacebookF}
-                      href="https://g1.globo.com/"
+                      href="https://www.facebook.com/InstitutoFabioCrescentini/"
                     />
                     <RoundIcon
                       variant="red"
                       icon={FaWhatsapp}
-                      href="https://g1.globo.com/"
+                      href="https://linktr.ee/drfabiocrescentini"
                     />
                   </div>
                 </div>
