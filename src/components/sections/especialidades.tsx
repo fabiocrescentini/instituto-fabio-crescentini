@@ -33,53 +33,53 @@ export function SectionEspecialidades({
         </p>
       </div>
       <div className="h-full bg-radial bg-cover bg-center bg-no-repeat ">
-        <div className="container mt-14">
-          <div className=" flex flex-wrap items-start justify-around  lg:px-20">
-            <div className="flex flex-col items-center h-auto w-44 ">
+        <div className="lg:container mt-14">
+          <div className=" flex flex-wrap items-start justify-around  lg:px-8 gap-x-10 gap-y-10 lg:gap-y-0">
+            <div className="flex flex-col items-center h-auto w-44  group">
               <Image
-                src="/sistema-digestivo/figado.svg"
+                src="/sistema-digestivo/image-1.png"
                 alt="imagem de um figado"
                 width={130}
                 height={130}
                 className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
               />
-              <span className="text-red-200 font-merriweather font-bold text-sm text-center">
+              <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
                 Hepatologia
               </span>
             </div>
-            <div className="flex flex-col items-center h-auto w-44">
+            <div className="flex flex-col items-center h-auto w-44 group">
               <Image
-                src="/sistema-digestivo/pancreas.svg"
+                src="/sistema-digestivo/image-2.png"
                 alt="imagem de um figado"
                 width={130}
                 height={130}
                 className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
               />
-              <span className="text-red-200 font-merriweather font-bold text-sm text-center">
+              <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
                 Doenças do Pâncreas e via biliar
               </span>
             </div>
-            <div className="flex flex-col items-center h-auto w-44">
+            <div className="flex flex-col items-center h-auto w-44 group">
               <Image
-                src="/sistema-digestivo/aparelho-digestivo.svg"
+                src="/sistema-digestivo/image-3.png"
                 alt="imagem de um figado"
                 width={130}
                 height={130}
                 className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
               />
-              <span className="text-red-200 font-merriweather font-bold text-sm text-center">
+              <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
                 Cirurgia do Aparelho Digestivo
               </span>
             </div>
-            <div className="flex flex-col items-center h-auto w-44">
+            <div className="flex flex-col items-center h-auto w-44 group">
               <Image
-                src="/sistema-digestivo/estomago.svg"
+                src="/sistema-digestivo/image-4.png"
                 alt="imagem de um figado"
                 width={130}
                 height={130}
                 className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
               />
-              <span className="text-red-200 font-merriweather font-bold text-sm text-center">
+              <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
                 Gastroenterologia
               </span>
             </div>
@@ -101,7 +101,7 @@ export function SectionEspecialidades({
                 <p className="text-blue font-source font-light text-sm leading-heading lg:pr-[3.75rem] mt-3 text-center lg:text-left">
                   {description}
                 </p>
-                <div className="flex mt-8 lg:mr-12 flex-wrap gap-2 justify-between ">
+                <div className="flex flex-col lg:flex-row  mt-8 lg:mr-12 flex-wrap gap-5 lg:gap-2 justify-between lg:max-w-[500px]">
                   <Button.Root href={urlLink}>
                     <Button.Text>Saiba mais</Button.Text>
                     <Button.Icon icon={ArrowRight} />

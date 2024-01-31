@@ -10,6 +10,7 @@ import { awards } from '@/data/awards'
 import { SectionUnits } from '@/components/sections/units'
 import { units } from '@/data/units'
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Sobre',
@@ -45,61 +46,78 @@ export default function Sobre() {
                 <span className="text-red-200">Sistema Digestivo</span>
               </p>
             </div>
-            <div className="h-auto mt-14">
-              <div className=" flex flex-wrap items-start justify-around  lg:px-20">
-                <div className="flex flex-col items-center h-auto w-44 ">
-                  <Image
-                    src="/sistema-digestivo/figado.svg"
-                    alt="imagem de um figado"
-                    width={130}
-                    height={130}
-                    className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
-                  />
-                  <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                    Hepatologia
-                  </span>
-                </div>
-                <div className="flex flex-col items-center h-auto w-44">
-                  <Image
-                    src="/sistema-digestivo/pancreas.svg"
-                    alt="imagem de um figado"
-                    width={130}
-                    height={130}
-                    className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
-                  />
-                  <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                    Doenças do Pâncreas e via biliar
-                  </span>
-                </div>
-                <div className="flex flex-col items-center h-auto w-44">
-                  <Image
-                    src="/sistema-digestivo/aparelho-digestivo.svg"
-                    alt="imagem de um figado"
-                    width={130}
-                    height={130}
-                    className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
-                  />
-                  <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                    Cirurgia do Aparelho Digestivo
-                  </span>
-                </div>
-                <div className="flex flex-col items-center h-auto w-44">
-                  <Image
-                    src="/sistema-digestivo/estomago.svg"
-                    alt="imagem de um figado"
-                    width={130}
-                    height={130}
-                    className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
-                  />
-                  <span className="text-red-200 font-merriweather font-bold text-sm text-center">
-                    Gastroenterologia
-                  </span>
-                </div>
+            <div className="h-auto mt-14 flex justify-center">
+              <div className=" flex flex-wrap items-start justify-around lg:px-8 gap-x-10 gap-y-10 lg:gap-y-0 ">
+                <Link href="/especialidades/hepatologia" className="group">
+                  <div className="flex flex-col items-center h-auto w-44  ">
+                    <Image
+                      src="/sistema-digestivo/image-1.png"
+                      alt="imagem de um figado"
+                      width={130}
+                      height={130}
+                      className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
+                    />
+                    <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700 ">
+                      Hepatologia
+                    </span>
+                  </div>
+                </Link>
+                <Link
+                  href="/especialidades/doencas-do-pancreas"
+                  className="group"
+                >
+                  <div className="flex flex-col items-center h-auto w-44">
+                    <Image
+                      src="/sistema-digestivo/image-2.png"
+                      alt="imagem de um figado"
+                      width={130}
+                      height={130}
+                      className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
+                    />
+                    <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
+                      Doenças do Pâncreas e via biliar
+                    </span>
+                  </div>
+                </Link>
+                <Link
+                  href="/especialidades/cirurgia-do-aparelho-digestivo"
+                  className="group"
+                >
+                  <div className="flex flex-col items-center h-auto w-44">
+                    <Image
+                      src="/sistema-digestivo/image-3.png"
+                      alt="imagem de um figado"
+                      width={130}
+                      height={130}
+                      className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
+                    />
+                    <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
+                      Cirurgia do Aparelho Digestivo
+                    </span>
+                  </div>
+                </Link>
+                <Link
+                  href={`/especialidades/oncologia-cirurgica`}
+                  className="group"
+                >
+                  <div className="flex flex-col items-center h-auto w-44">
+                    <Image
+                      src="/sistema-digestivo/image-4.png"
+                      alt="imagem de um figado"
+                      width={130}
+                      height={130}
+                      className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
+                    />
+                    <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
+                      Gastroenterologia
+                    </span>
+                  </div>
+                </Link>
               </div>
             </div>
             <div className="container px-5 flex flex-col justify-center items-center">
               <div className="mt-16 w-[12.188rem]">
-                <Button.Root href="#">
+                <Button.Root href="/especialidades/hepatologia">
                   <Button.Text>Saiba mais</Button.Text>
                   <Button.Icon icon={ArrowRight} />
                 </Button.Root>
