@@ -34,5 +34,43 @@
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
   }
 
+  @property --num-specilty {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
 
+  @property --num-transactions {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+
+  @property --num-years {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+
+  @property --num-users {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+
+  @keyframes counter {
+    from {
+      --num-specilty: 0;
+      --num-transactions: 0;
+      --num-years: 0;
+      --num-users: 0;
+    }
+
+    to {
+      --num-specilty: 8;
+      --num-years: 20;
+      --num-transactions: 50;
+      --num-users: 4;
+    }
+  }
 }

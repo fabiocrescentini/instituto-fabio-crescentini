@@ -43,12 +43,14 @@ export default function Hepatologia() {
             </h2>
 
             <p className="font-source leading-heading font-light text-sm text-blue">
-              No Instituto Dr. Fábio Crescentini, a excelência na Cirurgia do
-              Aparelho Digestivo é uma missão que redefine padrões de cuidado.
-              Sob a liderança visionária do Dr. Fábio Crescentini, nosso
-              instituto é reconhecido por oferecer soluções cirúrgicas avançadas
-              e personalizadas para uma variedade de condições
-              gastrointestinais.
+              A cirurgia do aparelho digestivo é a base que conduz o cirurgião
+              para a minha principal subespecialidade, a cirurgia
+              hepatobiliopancreática e os transplantes. Neste período da minha
+              formação, eu tive contatos com todos os outros órgãos que
+              completam a digestão: esôfago, estômago, intestino delgado e
+              colón. Essa completa formação profissional, permitiu-me fundar uma
+              pós-graduação que traz todo esse conhecimento a jovens cirurgiões
+              gerais.
             </p>
             <div className="flex pt-3 justify-center lg:justify-start">
               <Button.Root href="https://www.youtube.com/@fabiocrescentini1686">
@@ -66,7 +68,7 @@ export default function Hepatologia() {
       <section>
         <div className="container  flex flex-col items-center px-5  py-16 ">
           <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
-            Principais Patologias
+            Assuntos mais comentados
           </h2>
           <div className="flex flex-col lg:flex-row pt-14 w-full gap-5 justify-center items-center lg:items-start ">
             <Image
@@ -80,28 +82,45 @@ export default function Hepatologia() {
               <Acordeon.Root>
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Doença do Refluxo Gastroesofágico (DRGE)"
-                  description="A DRGE ocorre quando o conteúdo ácido do estômago retorna ao esôfago, causando sintomas como azia, regurgitação ácida, tosse crônica e, em casos graves, danos ao esôfago. Pode levar a complicações como esofagite e estreitamento esofágico."
+                  title="Câncer gástrico"
+                  description={`O câncer gástrico é diagnosticado frequentemente através de endoscopia, onde câmera examina o estômago, e biópsias são realizadas para análise. A localização do câncer pode variar, podendo afetar diferentes partes do estômago. A classificação do câncer gástrico em precoce ou avançado é importante para o tratamento. No estágio precoce, o câncer está limitado às camadas superficiais do estômago e tem um prognóstico melhor. Já no estágio avançado, o câncer se espalhou mais profundamente no estômago e possivelmente para outros órgãos.
+
+                  O tratamento varia conforme o estágio. No câncer gástrico precoce, pode ser possível a remoção cirúrgica do tumor com margens seguras, às vezes utilizando técnicas endoscópicas. No câncer avançado, a cirurgia para remover parte ou todo o estômago pode ser necessária, muitas vezes combinada com quimioterapia e/ou radioterapia para reduzir o tamanho do tumor antes da cirurgia ou eliminar células cancerosas remanescentes após a cirurgia. A abordagem depende da extensão da doença e da saúde geral do paciente. O acompanhamento regular com um médico é crucial para monitorar a resposta ao tratamento e ajustar conforme necessário.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Síndrome do Intestino Irritável (SII)"
-                  description="A SII é um distúrbio funcional do intestino caracterizado por dor abdominal, alterações nos padrões de evacuação, como constipação ou diarreia, e desconforto abdominal. Apesar de não causar danos permanentes, a SII pode afetar significativamente a qualidade de vida."
+                  title="Refluxo gastroesofágico"
+                  description={`
+                  O refluxo gastroesofágico é uma condição onde o ácido do estômago volta para o esôfago, causando sintomas como azia. O diagnóstico é frequentemente baseado nos sintomas e pode ser confirmado com exames como a endoscopia, que visualiza o esôfago, e a pHmetria esofágica, que mede a acidez no esôfago para avaliar a frequência e a gravidade do refluxo.
+
+                  A manometria esofágica é outro exame importante, pois avalia a função do esfíncter esofágico inferior - o músculo que impede o refluxo ácido. Esses exames são cruciais para determinar se a cirurgia é a melhor opção, especialmente em casos onde os medicamentos não são eficazes.
+
+                  Quando a cirurgia é indicada, o procedimento mais comum é a fundoplicatura de Nissen. Nesta cirurgia, a parte superior do estômago é enrolada ao redor da parte inferior do esôfago para fortalecer o esfíncter e prevenir o refluxo. Este procedimento é geralmente realizado por laparoscopia, que é minimamente invasiva.
+
+                  A cirurgia é considerada para casos mais graves ou quando há complicações relacionadas ao refluxo, como esofagite erosiva. A decisão de realizar a cirurgia depende da avaliação da gravidade dos sintomas, do impacto na qualidade de vida do paciente e dos resultados dos exames.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Doença Inflamatória Intestinal (DII)"
-                  description="Inclui condições como a doença de Crohn e a colite ulcerativa, nas quais o sistema imunológico ataca o trato gastrointestinal, resultando em inflamação crônica. Os sintomas incluem dor abdominal, diarréia, sangramento retal e perda de peso."
+                  title="Tumores do colón"
+                  description={`
+                  O câncer de cólon é diagnosticado frequentemente por colonoscopia, um exame que permite visualizar o interior do intestino grosso, e biópsias das áreas suspeitas. Sintomas incluem mudanças nos hábitos intestinais, sangue nas fezes e dor abdominal. A localização do câncer no cólon pode afetar o tratamento e o prognóstico.
+
+                  O tratamento varia conforme o estágio da doença. Em estágios iniciais, a cirurgia para remover o tumor é comum. Nos estágios mais avançados, pode ser necessária a combinação de cirurgia com quimioterapia e/ou radioterapia.
+
+                  Alguns cânceres de cólon são hereditários e ligados a características genéticas específicas. As síndromes mais comuns são a Polipose Adenomatosa Familiar (PAF) e o Câncer Colorretal Hereditário Não Poliposo (HNPCC, também conhecido como Síndrome de Lynch). Esses tipos hereditários requerem vigilância rigorosa e frequente, como colonoscopias regulares, e às vezes cirurgia preventiva. Pessoas com histórico familiar de câncer de cólon devem discutir com seu médico sobre testes genéticos e um plano de vigilância adequado.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Câncer Colorretal"
-                  description="O câncer colorretal é um tipo de câncer que afeta o cólon ou o reto. Pode se desenvolver a partir de pólipos pré-cancerígenos. Os sintomas incluem mudanças nos hábitos intestinais, sangramento retal, dor abdominal e perda de peso. O diagnóstico precoce é crucial para o tratamento eficaz."
-                />
-                <div className="h-[1px] w-full bg-pink-100" />
-                <Acordeon.Item
-                  title="Pancreatite Aguda e Crônica"
-                  description="A pancreatite é a inflamação do pâncreas. A forma aguda pode ser causada por cálculos biliares, alcoolismo ou infecções. A pancreatite crônica é uma condição progressiva que resulta em danos permanentes ao pâncreas, afetando a digestão e o controle do açúcar no sangue."
+                  title="Tumores do reto"
+                  description={`O câncer de reto é diagnosticado geralmente através de colonoscopia, onde uma câmera examina o reto, e biópsias são realizadas para análise. A localização do tumor no reto – alto, médio ou baixo – influencia o tratamento.
+
+                  Nos tumores altos, mais próximos da junção com o cólon, a cirurgia para remover a parte afetada do reto é comum, podendo ser seguida por quimioterapia ou radioterapia. Nos tumores médios, a combinação de radioterapia e quimioterapia antes da cirurgia é frequentemente usada para reduzir o tamanho do tumor e aumentar as chances de uma cirurgia bem-sucedida. Já nos tumores baixos, próximos ao ânus, o tratamento pode envolver radioterapia e quimioterapia para preservar a função anal, seguido de cirurgia.
+
+                  A abordagem depende do estágio do câncer, tamanho e localização exata do tumor, além da saúde geral do paciente. O objetivo é remover o câncer de forma eficaz, mantendo, sempre que possível, a função normal do reto. Acompanhamento regular e tratamento personalizado são essenciais.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
               </Acordeon.Root>
@@ -121,60 +140,63 @@ export default function Hepatologia() {
           <div className="py-10 flex flex-col space-y-10 text-center lg:text-left">
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Quanto tempo leva para se recuperar de uma cirurgia no aparelho
-                digestivo?
+                O que é refluxo gastroesofágico e quando é necessária cirurgia?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                O tempo de recuperação varia dependendo do tipo de cirurgia, da
-                complexidade do procedimento e das características individuais
-                do paciente. Cirurgias menos invasivas, como laparoscopia,
-                muitas vezes resultam em recuperação mais rápida, enquanto
-                procedimentos mais extensos podem exigir um período mais longo
-                de recuperação. O cirurgião discutirá as expectativas de
-                recuperação durante as consultas pré-cirúrgicas.
+                Refluxo gastroesofágico é a subida do conteúdo ácido do estômago
+                para o esôfago, causando sintomas como azia e regurgitação. A
+                cirurgia, geralmente uma fundoplicatura, é considerada quando o
+                tratamento medicamentoso não é eficaz, há complicações como
+                esofagite grave ou há uma hérnia de hiato volumosa associada.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Quais são os riscos e complicações associados à cirurgia do
-                aparelho digestivo?
+                Como é diagnosticado e tratado o câncer gástrico?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                Como em qualquer procedimento cirúrgico, existem riscos e
-                complicações potenciais. Estes podem incluir infecções,
-                hemorragias, reações adversas à anestesia, formação de coágulos
-                sanguíneos, vazamento de fluidos internos, entre outros. O
-                cirurgião e a equipe médica fornecerão informações detalhadas
-                sobre os riscos específicos associados à cirurgia planejada.
+                O câncer gástrico, ou câncer de estômago, geralmente é
+                diagnosticado através de endoscopia e biópsia. Os sintomas podem
+                incluir dor abdominal, perda de peso e dificuldade para comer. O
+                tratamento varia de acordo com o estágio do câncer e pode
+                incluir cirurgia para remover parte ou todo o estômago,
+                quimioterapia e radioterapia.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Quando a cirurgia é recomendada para condições digestivas, e
-                existem alternativas não cirúrgicas?
+                O que é diverticulite e quando a cirurgia é indicada?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                A decisão de realizar cirurgia dependerá da natureza da
-                condição, sua gravidade e da resposta a tratamentos não
-                cirúrgicos. Em alguns casos, como no tratamento do câncer ou
-                obstruções intestinais, a cirurgia pode ser a opção mais eficaz.
-                Para condições menos graves, como cálculos biliares ou úlceras,
-                tratamentos não cirúrgicos, como medicamentos ou procedimentos
-                endoscópicos, podem ser considerados antes da intervenção
-                cirúrgica.
+                Diverticulite é a inflamação de pequenas bolsas que se formam na
+                parede do intestino, chamadas divertículos. A cirurgia é
+                considerada em casos de diverticulite recorrente, complicações
+                como abscessos, perfuração intestinal, ou obstrução intestinal.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Mais perguntas...
+                Como é tratada a doença inflamatória intestinal cirurgicamente?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo con. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatu lorem ipsum
-                dolor sit amet.
+                Em doenças inflamatórias intestinais, como a doença de Crohn e a
+                colite ulcerativa, a cirurgia é uma opção quando há falha no
+                tratamento médico, ocorrência de complicações (como
+                estreitamento intestinal, abscessos ou perfurações) ou risco de
+                câncer. O tipo de cirurgia depende da localização e extensão da
+                doença.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-4">
+              <h4 className="text-red-200 text-lg font-merriweather font-bold">
+                Como é diagnosticado e tratado o câncer de esôfago
+              </h4>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                O câncer de esôfago é frequentemente diagnosticado através de
+                endoscopia e biópsia. Os sintomas incluem dificuldade para
+                engolir, perda de peso e dor no peito. O tratamento depende do
+                estágio e pode incluir cirurgia para remover parte do esôfago,
+                quimioterapia, radioterapia e terapias direcionadas.
               </p>
             </div>
           </div>
@@ -192,13 +214,7 @@ export default function Hepatologia() {
           <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
         </div>
       </section>
-      <SectionEspecialidades
-        urlImg="/especialidades/gastroenterologia.png"
-        urlLink="/especialidades/gastroenterologia"
-        altImg="image do aparelho digestivo"
-        title="Gastroenterologia"
-        description="No Instituto Dr. Fábio Crescentini, a excelência na Cirurgia do Aparelho Digestivo é uma missão que redefine padrões de cuidado. Sob a liderança visionária do Dr. Fábio Crescentini, nosso instituto é reconhecido por oferecer soluções cirúrgicas avançadas e personalizadas para uma variedade de condições gastrointestinais."
-      />
+      <SectionEspecialidades defaultOption="gastroenterologia" />
     </main>
   )
 }

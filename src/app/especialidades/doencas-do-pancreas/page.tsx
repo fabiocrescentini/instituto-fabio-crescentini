@@ -43,11 +43,14 @@ export default function Hepatologia() {
             </h2>
 
             <p className="font-source leading-heading font-light text-sm text-blue">
-              No Instituto Dr. Fábio Crescentini, reconhecemos a importância
-              vital do pâncreas e da via biliar para o funcionamento saudável do
-              sistema digestivo. Nosso compromisso é oferecer diagnóstico
-              preciso e tratamento eficaz para uma variedade de condições que
-              afetam essas estruturas cruciais.
+              As doenças do pâncreas e da via biliar exigem uma larga
+              experiência para que o sucesso do tratamento seja alcançado. Com
+              uma formação toda voltada para a essas áreas, o instituto Fábio
+              Crescentini conta com todos os recursos para te auxiliar no
+              diagnóstico e tratamento destas lesões. Destaque para o tratamento
+              cirúrgico das doenças do pâncreas com mais de 500 procedimentos
+              realizados apenas nesta área de atuação. Um número atingido por
+              pouquíssimos cirurgiões neste país.
             </p>
             <div className="flex pt-3 justify-center lg:justify-start">
               <Button.Root href="https://www.youtube.com/@fabiocrescentini1686">
@@ -65,7 +68,7 @@ export default function Hepatologia() {
       <section>
         <div className="container  flex flex-col items-center px-5  py-16 ">
           <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
-            Principais Patologias
+            Assuntos mais comentados
           </h2>
           <div className="flex flex-col lg:flex-row pt-14 w-full gap-5 justify-center items-center lg:items-start ">
             <Image
@@ -79,28 +82,52 @@ export default function Hepatologia() {
               <Acordeon.Root>
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Pancreatite"
-                  description="A pancreatite é a inflamação do pâncreas, muitas vezes desencadeada por cálculos biliares, consumo excessivo de álcool ou infecções. Os sintomas incluem dor abdominal intensa, náuseas e vômitos. O tratamento varia desde medidas de suporte até intervenções cirúrgicas, dependendo da gravidade."
-                />
-                <div className="h-[1px] w-full bg-pink-100" />
-                <Acordeon.Item
-                  title="Cálculos Biliares"
-                  description="Cálculos biliares são depósitos sólidos que se formam na vesícula biliar. Quando esses cálculos bloqueiam a passagem da bile, podem causar dor intensa e inflamação. O tratamento pode envolver mudanças na dieta, medicamentos ou, em casos graves, a remoção cirúrgica da vesícula biliar."
-                />
-                <div className="h-[1px] w-full bg-pink-100" />
-                <Acordeon.Item
                   title="Câncer de Pâncreas"
-                  description="O câncer de pâncreas é uma condição grave que muitas vezes não apresenta sintomas evidentes nos estágios iniciais. Quando os sintomas aparecem, como perda de peso inexplicada e icterícia, geralmente indicam um estágio avançado. O tratamento pode envolver cirurgia, quimioterapia e radioterapia, dependendo do estágio e da extensão da doença."
+                  description={`O adenocarcinoma de pâncreas é um tipo comum de câncer pancreático, muitas vezes diagnosticado em estágios avançados devido a sintomas iniciais sutis. Os sintomas podem incluir dor abdominal, perda de peso e icterícia. O diagnóstico é geralmente feito com exames de imagem, como tomografia computadorizada ou ressonância magnética, e confirmado por biópsia. Porém em casos ressecáveis, a cirurgia pode ser indicada mesmo sem a comprovação histológica obtida com as biópsias. O tempo é precioso no tratamento desta doença que muitas vezes não pode ser excluída com os exames menos invasivos.
+
+                  O tratamento depende do estágio do câncer. Se detectado precocemente, a cirurgia para remover o tumor pode ser uma opção. Em estágios mais avançados, opções de tratamento incluem quimioterapia e radioterapia para controlar o crescimento do tumor e aliviar os sintomas. Terapias direcionadas e imunoterapia são novas abordagens em alguns casos. O manejo dos sintomas e o suporte nutricional são importantes para manter a qualidade de vida. O acompanhamento médico regular é crucial para adaptar o tratamento conforme necessário e gerenciar os efeitos colaterais.`}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Pancreatite Crônica"
-                  description="Diferentemente da pancreatite aguda, a pancreatite crônica é uma inflamação persistente do pâncreas que pode resultar em danos irreversíveis. Isso pode levar a problemas digestivos e diabetes. O tratamento visa controlar os sintomas e prevenir complicações, muitas vezes incluindo modificações na dieta e medicamentos."
+                  title="Tumor da Via Biliar"
+                  description={`
+                  O tumor de via biliar, conhecido como colangiocarcinoma, é um câncer que afeta os ductos biliares. Esses tumores são classificados com base em sua localização: intra-hepático (dentro do fígado), peri-hilar (na junção dos ductos biliares) e distal (próximo ao pâncreas). Os sintomas incluem icterícia (amarelamento da pele e olhos), dor abdominal e perda de peso.
+
+                  O diagnóstico é feito através de exames de imagem como ultrassonografia, tomografia computadorizada e ressonância magnética. Procedimentos como colangiopancreatografia retrógrada endoscópica (CPRE) também são usados, às vezes com biópsia. A coledocoscopia é um recurso útil que vem ganhando espaço.
+
+                  O tratamento depende da localização e estágio do tumor. A cirurgia é a principal opção para tumores ressecáveis. O principal desafio das doenças peri-hilares é a drenagem biliar adequada para a preparação cirúrgica. Em casos avançados, onde a cirurgia não é viável, tratamentos como quimioterapia, radioterapia e procedimentos para aliviar a obstrução dos ductos biliares são considerados. O manejo dos sintomas e cuidados paliativos são importantes para melhorar a qualidade de vida.Acompanhamento médico regular é essencial para monitoramento e ajuste do tratamento.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Estenose Biliar"
-                  description="A estenose biliar refere-se ao estreitamento anormal dos ductos biliares, muitas vezes devido à formação de cicatrizes. Isso pode resultar em obstrução do fluxo biliar, levando a icterícia e desconforto abdominal. O tratamento pode envolver procedimentos endoscópicos para aliviar a obstrução."
+                  title="Colelitíase e suas complicações"
+                  description={`
+                  A colelitíase, conhecida como pedras na vesícula, pode levar a várias complicações. A mais comum é a colecistite, uma inflamação da vesícula biliar, causando dor intensa e febre. Se uma pedra bloqueia o ducto biliar, pode causar icterícia e coledocolitíase, a presença de pedras no ducto biliar comum, potencialmente levando a infecções como colangite. Pancreatite aguda é outra complicação séria, ocorrendo quando as pedras bloqueiam o ducto pancreático.
+
+                  Duas complicações menos comuns, mas importantes, incluem o íleo biliar, uma obstrução intestinal causada por uma grande pedra que passa para o intestino, e a síndrome de Mirizzi, onde uma pedra na vesícula biliar ou no ducto cístico causa obstrução e inflamação do ducto biliar comum.
+
+                  Essas complicações requerem avaliação e tratamento médico imediato, frequentemente envolvendo procedimentos para remover as pedras e, em alguns casos, cirurgia para remover a vesícula biliar. O tratamento adequado é crucial para prevenir danos mais sérios ao fígado, pâncreas e sistema digestivo.
+                  `}
+                />
+                <div className="h-[1px] w-full bg-pink-100" />
+                <Acordeon.Item
+                  title="Pancreatite Aguda"
+                  description={`A pancreatite aguda é uma inflamação súbita do pâncreas. É classificada, segundo a Classificação de Atlanta, como leve, moderada ou grave. Os sintomas incluem dor intensa na parte superior do abdômen, náuseas e vômitos. A pancreatite aguda geralmente é causada por pedras na vesícula ou consumo excessivo de álcool.
+
+                  O diagnóstico é feito através de exames de sangue, que mostram enzimas pancreáticas elevadas, e exames de imagem, como ultrassonografia ou tomografia computadorizada, para avaliar o pâncreas.
+
+                  O tratamento depende da gravidade. Na pancreatite leve, o manejo inclui jejum para ajuda no controle dos sintomas, hidratação intravenosa e medicação para dor. Na pancreatite moderada ou grave, tratamentos mais intensivos são necessários, incluindo cuidados em unidade de terapia intensiva, nutrição especial e, em alguns casos, procedimentos para drenar fluidos ou remover tecido danificado. Evitar álcool e gerenciar a saúde da vesícula biliar são importantes para prevenir recorrências. O acompanhamento médico é essencial para monitorar a recuperação e prevenir complicações.
+                  `}
+                />
+                <div className="h-[1px] w-full bg-pink-100" />
+                <Acordeon.Item
+                  title="Doenças Biliares e transplante"
+                  description={`As doenças biliares, afetando a vesícula biliar e os ductos biliares, podem às vezes levar à necessidade de um transplante de fígado. Isso geralmente ocorre em condições avançadas, como cirrose biliar primária ou colangite esclerosante primária, que causam danos progressivos ao fígado. Nestes casos, o fígado deixa de funcionar adequadamente, e o transplante se torna uma opção de tratamento vital.
+
+                  Um sintoma comum dessas doenças é o prurido intratável, uma coceira intensa e persistente que não melhora com tratamentos convencionais. Além do desconforto significativo, o prurido intratável pode indicar agravamento da doença hepática, reforçando a necessidade de considerar o transplante.
+
+                  No processo de transplante de fígado, o fígado doente é substituído por um fígado saudável de um doador. A avaliação para transplante considera a gravidade da doença hepática e a saúde geral do paciente. Após o transplante, os pacientes geralmente têm uma melhora significativa na qualidade de vida e alívio dos sintomas, incluindo o prurido. O acompanhamento médico contínuo é essencial para monitorar a função do novo fígado e para o manejo de medicamentos imunossupressores, que ajudam a prevenir a rejeição do órgão transplantado.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
               </Acordeon.Root>
@@ -120,57 +147,86 @@ export default function Hepatologia() {
           <div className="py-10 flex flex-col space-y-10 text-center lg:text-left">
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Como posso prevenir cálculos biliares?
+                O que é colelitíase e quais são seus sintomas?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                Embora nem todos os casos de cálculos biliares possam ser
-                prevenidos, há medidas que podem reduzir o risco. Manter uma
-                dieta equilibrada, rica em fibras, e evitar ganho de peso
-                excessivo podem ajudar. Além disso, manter-se hidratado e
-                praticar atividade física regular pode contribuir para a saúde
-                da vesícula biliar e prevenir a formação de cálculos.
+                Colelitíase é o termo médico para pedras na vesícula biliar. Os
+                sintomas podem incluir dor na parte superior direita do abdômen,
+                náuseas, vômitos e, em alguns casos, febre. Algumas pessoas
+                podem não apresentar sintomas. As pedras são formadas por
+                colesterol ou bilirrubina e podem causar complicações se
+                bloquearem os ductos biliares o que leva a icterícia.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Quais são os sintomas de câncer de pâncreas e como posso
-                reconhecê-los precocemente?
+                Todo tumor no pâncreas é maligno?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                O câncer de pâncreas é muitas vezes assintomático nos estágios
-                iniciais, tornando o diagnóstico precoce desafiador. No entanto,
-                sintomas como perda de peso inexplicada, dor abdominal
-                persistente, icterícia, e mudanças nos hábitos intestinais podem
-                ser indicativos. Consultar um profissional de saúde ao
-                experimentar esses sintomas é crucial para uma avaliação
-                adequada.
+                Não, nem todo tumor de pâncreas é maligno. Existem tanto tumores
+                benignos quanto malignos no pâncreas. Porém tumores malignos do
+                pâncreas são mais comuns e preocupantes. O tipo mais frequente é
+                o adenocarcinoma ductal, que representa cerca de 85% de todos os
+                casos de câncer de pâncreas. Este tipo se origina nas células
+                que revestem os ductos pancreáticos.
+              </p>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                Além do adenocarcinoma ductal, existem outros tipos menos comuns
+                de tumores malignos no pâncreas, incluindo: Tumores
+                neuroendócrinos pancreáticos, carcinoma acinar, carcinoma
+                adenosquamoso, carcinoma de células em anel de sinete e
+                carcinoma de células gigantes, que são tipos muito raros de
+                câncer de pâncreas.
+              </p>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                Por outro lado, existem também tumores benignos do pâncreas,
+                como cistodenomas serosos e tumores neuroendócrinos não
+                funcionais. Embora estes não sejam cancerosos, podem necessitar
+                de acompanhamento ou tratamento, dependendo do tamanho,
+                localização e possíveis sintomas que causam.
+              </p>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                É importante notar que, mesmo os tumores pancreáticos benignos,
+                podem, em algumas circunstâncias, apresentar riscos à saúde e
+                requerem avaliação médica adequada.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Quais são as opções de tratamento para pancreatite crônica?
+                O que é um Tumor de Klatskin?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                O tratamento da pancreatite crônica visa controlar os sintomas e
-                prevenir complicações. Isso pode envolver mudanças na dieta,
-                abstenção de álcool, medicamentos para aliviar a dor e a
-                inflamação, e, em alguns casos, procedimentos cirúrgicos para
-                aliviar a obstrução dos ductos pancreáticos. A abordagem
-                terapêutica é personalizada, dependendo da gravidade e das
-                necessidades individuais do paciente.
+                O Tumor de Klatskin é um tipo de câncer que ocorre nos ductos
+                biliares no local onde eles se dividem para entrar no fígado. É
+                um tipo de colangiocarcinoma. Os sintomas incluem icterícia,
+                coceira na pele, fezes claras, urina escura e perda de peso. O
+                tratamento pode envolver cirurgia, radioterapia e quimioterapia.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Mais perguntas...
+                Como é tratada a coledocolitíase?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo con. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatu lorem ipsum
-                dolor sit amet.
+                Coledocolitíase é a presença de pedras no ducto biliar comum. O
+                tratamento geralmente envolve a remoção das pedras, que pode ser
+                feita por endoscopia (CPRE - Colangiopancreatografia Retrógrada
+                Endoscópica). Em alguns casos, pode ser necessária cirurgia. O
+                tratamento também inclui o manejo de qualquer infecção
+                associada.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-4">
+              <h4 className="text-red-200 text-lg font-merriweather font-bold">
+                O que é pancreatite aguda e quais são suas causas?
+              </h4>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                Pancreatite aguda é a inflamação súbita do pâncreas, que pode
+                ser leve ou grave. As causas comuns incluem pedras na vesícula
+                biliar e abuso de álcool. Os sintomas incluem dor intensa no
+                abdômen superior, náuseas e vômitos. O tratamento envolve
+                repouso, tratamento da dor, hidratação intravenosa e, em alguns
+                casos, alimentação por sonda ou cirurgia.
               </p>
             </div>
           </div>
@@ -188,13 +244,7 @@ export default function Hepatologia() {
           <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
         </div>
       </section>
-      <SectionEspecialidades
-        urlImg="/especialidades/aparelho-digestivo.png"
-        urlLink="/especialidades/cirurgia-aparelho-digestivo"
-        altImg="image do aparelho digestivo"
-        title="Cirurgia do Aparelho Digestivo"
-        description="No Instituto Dr. Fábio Crescentini, a excelência na Cirurgia do Aparelho Digestivo é uma missão que redefine padrões de cuidado. Sob a liderança visionária do Dr. Fábio Crescentini, nosso instituto é reconhecido por oferecer soluções cirúrgicas avançadas e personalizadas para uma variedade de condições gastrointestinais."
-      />
+      <SectionEspecialidades defaultOption="cirurgia-aparelho-digestivo" />
     </main>
   )
 }

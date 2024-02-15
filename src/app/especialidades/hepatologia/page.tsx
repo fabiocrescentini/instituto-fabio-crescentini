@@ -43,13 +43,15 @@ export default function Hepatologia() {
             </h2>
 
             <p className="font-source leading-heading font-light text-sm text-blue">
-              A Hepatologia no Instituto Dr. Fábio Crescentini representa uma
-              área de especialização dedicada ao estudo, diagnóstico e
-              tratamento de doenças relacionadas ao fígado. Sob a liderança do
-              renomado Dr. Fábio Crescentini, nosso instituto se destaca na
-              abordagem abrangente e avançada para as condições hepáticas,
-              visando oferecer aos pacientes cuidados de qualidade e soluções
-              eficazes.
+              A Hepatologia representa a área de especialização dedicada ao
+              estudo, diagnóstico e tratamento de doenças relacionadas ao
+              fígado. Sob a liderança do renomado Dr. Fábio Crescentini, a
+              atuação do grupo vai além do tratamento clínico, com apoio de
+              tratamentos cirúrgicos e transplantes, incluindo o transplante
+              intervivos. Modalidades de destaque no nosso programa com
+              expertise singular em nosso meio. Com mais de 20 anos de
+              experiência, aqui encontra-se o ambiente ideal para solução das
+              doenças do fígado.
             </p>
             <div className="flex pt-3 justify-center lg:justify-start">
               <Button.Root href="https://www.youtube.com/@fabiocrescentini1686">
@@ -67,7 +69,7 @@ export default function Hepatologia() {
       <section>
         <div className="container  flex flex-col items-center px-5  py-16 ">
           <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
-            Principais Patologias
+            Assuntos mais comentados
           </h2>
           <div className="flex flex-col lg:flex-row pt-14 w-full gap-5 justify-center items-center lg:items-start ">
             <Image
@@ -81,28 +83,70 @@ export default function Hepatologia() {
               <Acordeon.Root>
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Hepatite"
-                  description="Inflamação do fígado, frequentemente causada por vírus, álcool, drogas ou distúrbios autoimunes."
+                  title="Hepatocarcinoma"
+                  description={`O hepatocarcinoma, também conhecido como carcinoma hepatocelular, é um tipo de câncer de fígado. O diagnóstico é geralmente feito através de exames de imagem, como ultrassonografia, tomografia computadorizada ou ressonância magnética, e pode incluir uma biópsia para confirmar o diagnóstico. Fatores de risco incluem cirrose hepática, hepatite crônica, e consumo excessivo de álcool. Neste cenário, o rastreamento é muito importante. Ultrassonografia a cada semestre é a recomendação mais utilizadas nos consensos.
+
+                  O tratamento depende do estágio do câncer e da saúde geral do paciente. Em estágios iniciais, a cirurgia para remover o tumor ou um transplante de fígado podem ser opções. Em casos mais avançados, tratamentos como ablação (destruição do tumor por calor ou frio), embolização (bloqueio do fluxo sanguíneo para o tumor), radioterapia e quimioterapia podem ser utilizados. A terapia direcionada, que usa medicamentos para atacar características específicas das células cancerosas, também é uma abordagem comum. O acompanhamento regular com um médico é crucial para monitorar a progressão da doença e ajustar o tratamento conforme necessário.`}
+                />
+                <div className="h-[1px] w-full bg-pink-100" />
+                <Acordeon.Item
+                  title="Metástases hepáticas"
+                  description={`As metástases hepáticas são tumores secundários no fígado, originados de cânceres em outras partes do corpo, como cólon, reto, pulmão, mama e pâncreas. As metástases colorretais, que se originam de cânceres no cólon ou no reto, são as mais comuns. O tratamento depende do tamanho, número e localização dos tumores, bem como do estado geral de saúde do paciente.
+
+                  A hepatectomia, cirurgia para remover parte do fígado, pode ser curativa em alguns casos de metástases hepáticas, especialmente as colorretais. Quando há muitos tumores ou estão em locais complicados, a cirurgia pode ser realizada em dois tempos cirúrgicos diferentes, permitindo que o fígado se regenere entre as cirurgias.
+
+                  Além da cirurgia, outras opções de tratamento incluem quimioterapia, radioterapia e ablação, um procedimento que usa calor ou frio para destruir as células cancerosas. Novas terapias, como o transplante de fígado, estão sendoexploradas, especialmente em casos onde outras opções de tratamento não são viáveis.
+
+                  O plano de tratamento é individualizado, baseado nas características específicas das metástases e na condição clínica do paciente. O acompanhamento médico regular é essencial para avaliar a resposta ao tratamento e fazer ajustes conforme necessário.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
                   title="Cirrose Hepática"
-                  description="Uma condição crônica que resulta em cicatrização do tecido hepático, comprometendo sua função normal."
+                  description={`A cirrose é uma condição crônica onde o tecido normal do fígado é substituído por tecido cicatricial, afetando a função hepática. É comumente causada pelo consumo excessivo de álcool, hepatite crônica e doenças hepáticas gordurosas. Os sintomas incluem fadiga, perda de apetite, icterícia (amarelamento da pele e olhos) e acúmulo de líquido no abdômen.
+
+O diagnóstico é feito através de exames de sangue, que avaliam a função hepática, e exames de imagem, como ultrassonografia, tomografia ou ressonância magnética. Uma biópsia hepática também pode ser realizada para confirmar a cirrose.
+
+Não há cura para a cirrose, mas o tratamento visa controlar os sintomas e prevenir complicações. Isso inclui evitar álcool, manter uma dieta saudável, e usar medicamentos para gerenciar sintomas específicos, como diuréticos para reduzir o acúmulo de líquido. Em casos avançados, pode ser necessário um transplante de fígado. É importante o acompanhamento regular com um médico para monitorar a progressão da doença e adaptar o tratamento conforme necessário.
+`}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Esteatose Hepática (Fígado Gordo)"
-                  description="Acúmulo excessivo de gordura nas células do fígado, muitas vezes associado a hábitos de vida pouco saudáveis."
+                  title="Esteatose"
+                  description={`A esteatose hepática, conhecida também como fígado gorduroso, ocorre quando há acúmulo excessivo de gordura nas células do fígado. É frequentemente associada a obesidade, diabetes, consumo excessivo de álcool e altos níveis de colesterol e triglicerídeos. A esteatose pode ser assintomática, mas alguns podem sentir fadiga ou desconforto abdominal.
+
+                  O diagnóstico é feito através de exames de sangue, que avaliam a função hepática, e exames de imagem, como ultrassonografia, para visualizar a gordura no fígado. Em alguns casos, uma biópsia hepática pode ser necessária. E a elastografia hepática auxilia no seguimento.
+
+                  O tratamento foca na gestão das causas subjacentes: reduzir o consumo de álcool, controlar o peso através de dieta saudável e exercícios físicos, e gerenciar diabetes ou níveis elevados de colesterol e triglicerídeos com a ajuda de medicamentos, se necessário. Não há medicamentos específicos para tratar a Esteatose, mas mudanças no estilo de vida podem melhorar significativamente a condição. O tratamento da esteatohepatite, que é uma condição inflamatória associada a Esteatose, pode exigir tratamento medicamentoso que difere conforme as comorbidades do paciente. É importante o acompanhamento médico regular para monitorar a saúde do fígado e evitar a progressão para condições mais graves, como a cirrose.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Câncer Hepático"
-                  description="Desenvolvimento de células cancerosas no fígado, com várias causas, incluindo hepatite crônica e cirrose."
+                  title="Hepatites"
+                  description={`As hepatites virais são inflamações do fígado causadas por diferentes vírus, identificados como hepatites A, B, C, D e E. Os sintomas comuns incluem fadiga, dor abdominal, icterícia e alterações nas fezes e urina. Algumas hepatites podem ser assintomáticas, principalmente nas fases iniciais.
+
+                  O diagnóstico é feito através de exames de sangue específicos que detectam os vírus e avaliam a função hepática. Para a hepatite A, a prevenção é feita com vacinação e práticas de higiene. As hepatites B e C podem necessitar de tratamento com antivirais para controlar a replicação do vírus e prevenir danos ao fígado. A hepatite D ocorre apenas em pessoas com hepatite B e pode exigir tratamento similar ao da hepatite B. A hepatite E geralmente é autolimitada, tratada com suporte clínico.
+
+                  É crucial evitar a propagação desses vírus, praticando sexo seguro, evitando compartilhar agulhas e, no caso das hepatites A e B, garantindo a vacinação. O acompanhamento médico regular é importante para monitorar a saúde do fígado e adaptar o tratamento conforme necessário.`}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Doença Hepática Alcoólica"
-                  description="Danos ao fígado causados pelo consumo excessivo de álcool, resultando em inflamação e cicatrização."
+                  title="Alimentação e doenças hepáticas"
+                  description={`A alimentação desempenha um papel fundamental na saúde do fígado. Uma dieta rica em gorduras saturadas, açúcar e calorias pode levar ao acúmulo de gordura no fígado, resultando em esteatose hepática (fígado gorduroso). Além disso, o consumo excessivo de álcool pode causar hepatite alcoólica e eventualmente cirrose, uma cicatrização progressiva do fígado. Por outro lado, uma dieta balanceada, rica em fibras, vegetais, grãos integrais e proteínas magras, pode ajudar a manter a função hepática saudável. O consumo de alimentos ricos em carboidratos principalmente a frutose propiciam o acúmulo de gordura no fígado.
+
+                  Alimentos com propriedades anti-inflamatórias e antioxidantes, como verduras, chás verdes e peixes ricos em ômega-3, também são benéficos. O café assume um papel de destaque na proteção do fígado.
+
+                   Manter um peso saudável, evitar o consumo excessivo de álcool e controlar doenças crônicas como diabetes e colesterol alto são essenciais para prevenir doenças do fígado. Uma boa nutrição é chave para a saúde hepática e geral.
+                  `}
+                />
+                <div className="h-[1px] w-full bg-pink-100" />
+                <div className="h-[1px] w-full bg-pink-100" />
+                <Acordeon.Item
+                  title="Álcool e o Fígado"
+                  description={`O consumo excessivo e prolongado de álcool está diretamente relacionado a várias doenças do fígado. O álcool pode causar danos às células hepáticas, levando a inflamações como a hepatite alcoólica. Com o tempo, isso pode evoluir para cirrose, uma condição séria onde o tecido saudável do fígado é substituído por tecido cicatricial, prejudicando a função hepática. Além disso, o abuso de álcool aumenta o risco de desenvolver carcinoma hepatocelular, um tipo de câncer de fígado.
+
+                  A redução ou eliminação do consumo de álcool é fundamental para prevenir doenças hepáticas. Adotar um estilo de vida saudável, com alimentação balanceada e atividades físicas, também ajuda a proteger o fígado. Em casos de doença hepática alcoólica, o tratamento inclui abstinência de álcool, mudanças na dieta e, em alguns casos, medicações para gerenciar os danos ao fígado..
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
               </Acordeon.Root>
@@ -122,58 +166,69 @@ export default function Hepatologia() {
           <div className="py-10 flex flex-col space-y-10 text-center lg:text-left">
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                O consumo moderado de álcool é seguro para quem possui doenças
-                hepáticas?
+                Quais são os tumores hepáticos mais frequentes?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                A resposta pode variar dependendo do tipo e da gravidade da
-                doença hepática. Em algumas condições, como a esteatose
-                hepática, é recomendado evitar o consumo de álcool, mesmo em
-                quantidades moderadas. Pacientes com doenças hepáticas
-                avançadas, como cirrose, geralmente são aconselhados a abster-se
-                completamente do álcool, pois pode agravar ainda mais a
-                condição.
+                Os tumores hepáticos podem ser benignos ou malignos. Os tipos
+                mais comuns de tumores benignos incluem hemangiomas e adenomas
+                hepáticos. Quanto aos tumores malignos, o carcinoma
+                hepatocelular é o mais comum, seguido pelo colangiocarcinoma.
+                Metástases de outros cânceres para o fígado também são
+                frequentes.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Como posso prevenir a hepatite?
+                Quais as opções de tratamento para tumores do fígado?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                A prevenção da hepatite envolve práticas como a vacinação contra
-                as hepatites A e B, adoção de medidas de higiene pessoal e
-                alimentar, e o uso de práticas seguras durante atividades que
-                envolvam fluidos corporais. Evitar o compartilhamento de agulhas
-                e práticas sexuais seguras também são essenciais para prevenir a
-                transmissão de hepatites.
+                O tratamento para tumores do fígado varia dependendo do tipo e
+                estágio do tumor. Para tumores pequenos e localizados, a
+                cirurgia pode ser uma opção. Outros tratamentos incluem ablação
+                (destruição do tumor), embolização (bloqueio do suprimento de
+                sangue para o tumor), radioterapia e quimioterapia. Em alguns
+                casos, pode ser considerado um transplante de fígado. As opções
+                são inúmeras e a correta utilização de cada passo terapêutico
+                exige um especialista com experiência.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Quais são os tratamentos disponíveis para a cirrose hepática?
+                Como o álcool afeta o fígado?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                O tratamento da cirrose hepática depende da causa subjacente e
-                do estágio da doença. Em alguns casos, pode ser necessário
-                tratar a condição que está causando a cirrose, como hepatite
-                viral ou abuso de álcool. Medidas para controlar os sintomas,
-                como diuréticos para o controle da ascite, e, em casos
-                avançados, transplante hepático, podem ser consideradas. A
-                gestão inclui uma abordagem multidisciplinar para garantir o
-                suporte adequado ao paciente.
+                O consumo excessivo e prolongado de álcool pode causar danos
+                significativos ao fígado, levando a condições como esteatose
+                hepática (acúmulo de gordura no fígado), hepatite alcoólica
+                (inflamação do fígado) e cirrose (cicatrização e perda de função
+                do fígado). A redução do consumo de álcool é crucial para
+                prevenir danos adicionais.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Mais perguntas...
+                Quais são as principais medicações que podem causar hepatite?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo con. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatu lorem ipsum
-                dolor sit amet.
+                Alguns medicamentos podem causar hepatite medicamentosa, uma
+                inflamação do fígado induzida por remédios. Exemplos incluem
+                certos antibióticos, anti-inflamatórios não esteroides,
+                medicamentos para epilepsia e alguns suplementos e ervas. É
+                importante seguir as orientações médicas e relatar quaisquer
+                efeitos colaterais ao seu médico.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-4">
+              <h4 className="text-red-200 text-lg font-merriweather font-bold">
+                Quais são as causas mais comuns de hepatite?
+              </h4>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                Hepatite é a inflamação do fígado e pode ser causada por
+                diversos fatores. As causas mais comuns incluem infecções virais
+                (hepatites A, B, C, D e E), abuso de álcool, certos medicamentos
+                e toxinas, doenças autoimunes e doenças metabólicas. A prevenção
+                inclui vacinação (para hepatites A e B), cuidados com higiene e
+                alimentação, e uso cuidadoso de medicamentos e álcool.
               </p>
             </div>
           </div>
@@ -191,13 +246,7 @@ export default function Hepatologia() {
           <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
         </div>
       </section>
-      <SectionEspecialidades
-        urlImg="/especialidades/pancreas.png"
-        urlLink="/especialidades/doencas-do-pancreas"
-        altImg="image de um pancreas"
-        title="Doenças do Pâncreas e Via Biliar"
-        description="No Instituto Dr. Fábio Crescentini, reconhecemos a importância vital do pâncreas e da via biliar para o funcionamento saudável do sistema digestivo. Nosso compromisso é oferecer diagnóstico preciso e tratamento eficaz para uma variedade de condições que afetam essas estruturas cruciais."
-      />
+      <SectionEspecialidades defaultOption="doecas-do-pancreas" />
     </main>
   )
 }

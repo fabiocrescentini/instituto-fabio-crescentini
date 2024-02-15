@@ -86,7 +86,7 @@ export function SubMenu() {
               href="/especialidades/doencas-do-pancreas"
               className="group-hover:text-red-300"
             >
-              Doenças do Pâncreas e via biliar
+              Doenças do Pâncreas e Via Biliar
             </Link>
           </MenuItem>
           <div className="w-full h-[1px] bg-gray-200" />

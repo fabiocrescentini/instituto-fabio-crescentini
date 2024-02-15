@@ -57,7 +57,7 @@ export default function Sobre() {
                       height={130}
                       className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
                     />
-                    <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700 ">
+                    <span className="text-red-700 font-merriweather font-bold text-sm text-center group-hover:text-red-200 ">
                       Hepatologia
                     </span>
                   </div>
@@ -74,13 +74,13 @@ export default function Sobre() {
                       height={130}
                       className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
                     />
-                    <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
+                    <span className="text-red-700 font-merriweather font-bold text-sm text-center group-hover:text-red-200">
                       Doenças do Pâncreas e via biliar
                     </span>
                   </div>
                 </Link>
                 <Link
-                  href="/especialidades/cirurgia-do-aparelho-digestivo"
+                  href="/especialidades/cirurgia-aparelho-digestivo"
                   className="group"
                 >
                   <div className="flex flex-col items-center h-auto w-44">
@@ -91,7 +91,7 @@ export default function Sobre() {
                       height={130}
                       className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
                     />
-                    <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
+                    <span className="text-red-700 font-merriweather font-bold text-sm text-center group-hover:text-red-200">
                       Cirurgia do Aparelho Digestivo
                     </span>
                   </div>
@@ -108,7 +108,7 @@ export default function Sobre() {
                       height={130}
                       className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
                     />
-                    <span className="text-red-200 font-merriweather font-bold text-sm text-center group-hover:text-red-700">
+                    <span className="text-red-700 font-merriweather font-bold text-sm text-center group-hover:text-red-200">
                       Gastroenterologia
                     </span>
                   </div>
@@ -214,7 +214,7 @@ export default function Sobre() {
               </p>
               <p className="font-source font-light text-sm">
                 Federação Brasileira de Gastroenterologia, Brasil Título:
-                Esepcialista em Gastroenterologia
+                Especialista em Gastroenterologia
               </p>
             </div>
             <DivItem />

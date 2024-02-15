@@ -56,7 +56,12 @@ export function AcordeonItem({
           </h2>
           <AccordionPanel pb={4} m={0} p={0}>
             <p className="text-xs font-source font-light text-blue mb-3">
-              {description}
+              {description.split('\n').map((paragraph, index) => (
+                <span key={index}>
+                  {paragraph}
+                  <br />
+                </span>
+              ))}
             </p>
           </AccordionPanel>
         </>

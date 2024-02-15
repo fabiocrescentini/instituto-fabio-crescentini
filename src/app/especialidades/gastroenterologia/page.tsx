@@ -43,12 +43,13 @@ export default function Hepatologia() {
             </h2>
 
             <p className="font-source leading-heading font-light text-sm text-blue">
-              No Instituto Dr. Fábio Crescentini, a excelência na Cirurgia do
-              Aparelho Digestivo é uma missão que redefine padrões de cuidado.
-              Sob a liderança visionária do Dr. Fábio Crescentini, nosso
-              instituto é reconhecido por oferecer soluções cirúrgicas avançadas
-              e personalizadas para uma variedade de condições
-              gastrointestinais.
+              As doenças do pâncreas e da via biliar exigem uma larga
+              experiência para que o sucesso do tratamento seja alcançado. Com
+              uma formação toda voltada para a essas áreas, o instituto Fábio
+              Crescentini conta com todos os recursos para te auxiliar no
+              diagnóstico e tratamento destas lesões. Destaque para o tratamento
+              cirúrgico das doenças do pâncreas com mais de 500 procedimentos
+              realizados apenas nesta área de atuação.
             </p>
             <div className="flex pt-3 justify-center lg:justify-start">
               <Button.Root href="https://www.youtube.com/@fabiocrescentini1686">
@@ -66,7 +67,7 @@ export default function Hepatologia() {
       <section>
         <div className="container  flex flex-col items-center px-5  py-16 ">
           <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
-            Principais Patologias
+            Assuntos mais comentados
           </h2>
           <div className="flex flex-col lg:flex-row pt-14 w-full gap-5 justify-center items-center lg:items-start ">
             <Image
@@ -80,28 +81,54 @@ export default function Hepatologia() {
               <Acordeon.Root>
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Doença do Refluxo Gastroesofágico (DRGE)"
-                  description="A DRGE ocorre quando o conteúdo ácido do estômago retorna ao esôfago, causando sintomas como azia, regurgitação ácida, tosse crônica e, em casos graves, danos ao esôfago. Pode levar a complicações como esofagite e estreitamento esofágico."
+                  title="Refluxo Gastroesofágico – Tratamento Clínico"
+                  description={`
+                    O refluxo gastroesofágico é uma condição onde o ácido do estômago retorna ao esôfago, causando sintomas como azia e desconforto. O diagnóstico é baseado nos sintomas e pode ser confirmado com exames como endoscopia, que visualiza o esôfago, e pHmetria esofágica, que mede a acidez no esôfago.
+
+                    O tratamento clínico envolve mudanças no estilo de vida, como evitar alimentos que pioram os sintomas (como comidas gordurosas, cafeína e álcool), não comer antes de deitar e elevar a cabeça da cama. Medicamentos como antiácidos, bloqueadores H2 e inibidores da bomba de prótons são usados para reduzir a acidez do estômago e aliviar os sintomas. Em alguns casos, medicamentos pró-cinéticos, que ajudam a esvaziar o estômago mais rapidamente, também podem ser prescritos.
+
+                    Essas medidas, juntamente com um acompanhamento médico, ajudam a controlar os sintomas e a prevenir complicações do refluxo, como inflamação do esôfago.
+                    `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Síndrome do Intestino Irritável (SII)"
-                  description="A SII é um distúrbio funcional do intestino caracterizado por dor abdominal, alterações nos padrões de evacuação, como constipação ou diarreia, e desconforto abdominal. Apesar de não causar danos permanentes, a SII pode afetar significativamente a qualidade de vida."
+                  title="Úlceras pépticas"
+                  description={`As úlceras pépticas são feridas que se desenvolvem no revestimento do estômago ou do intestino delgado. Os sintomas comuns incluem dor abdominal, especialmente quando o estômago está vazio, e indigestão. O diagnóstico é feito através de endoscopia, um exame que visualiza o trato digestivo superior, e testes para a bactéria Helicobacter pylori, uma causa comum de úlceras.
+
+                  O tratamento depende da causa da úlcera. Se a úlcera for causada pela Helicobacter pylori, uma combinação de antibióticos e medicamentos que reduzem a acidez do estômago, como inibidores da bomba de prótons ou bloqueadores H2, é usada para erradicar a bactéria e permitir que a úlcera cicatrize. Em úlceras não relacionadas a essa bactéria, os medicamentos para reduzir a acidez do estômago são a principal forma de tratamento.
+
+                  Além dos medicamentos, mudanças no estilo de vida, como evitar o uso de anti-inflamatórios não esteroides (se estes foram a causa) e reduzir ou eliminar o consumo de álcool e tabaco, também são recomendadas para ajudar na cicatrização da úlcera e prevenir recorrências.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Doença Inflamatória Intestinal (DII)"
-                  description="Inclui condições como a doença de Crohn e a colite ulcerativa, nas quais o sistema imunológico ataca o trato gastrointestinal, resultando em inflamação crônica. Os sintomas incluem dor abdominal, diarréia, sangramento retal e perda de peso."
+                  title="Intolerância Lactose"
+                  description={`A intolerância à lactose é a incapacidade de digerir lactose, o açúcar presente no leite e em produtos lácteos. Os sintomas incluem inchaço, gases, diarréia e cólicas após consumir alimentos que contêm lactose. O diagnóstico é geralmente feito com base nos sintomas e pode ser confirmado por testes, como o teste de hidrogênio expirado ou o teste de tolerância à lactose sanguíneo.
+
+                  O tratamento envolve a modificação da dieta para limitar ou evitar produtos lácteos. Alternativas sem lactose e produtos lácteos com baixo teor de lactose estão disponíveis. Suplementos de lactase, a enzima que falta em indivíduos com intolerância à lactose, podem ser tomados antes de consumir alimentos lácteos para ajudar na digestão da lactose.
+
+                  É importante garantir uma ingestão adequada de cálcio e vitamina D, que são abundantes no leite, através de outras fontes ou suplementos. O manejo da intolerância à lactose é focado em reduzir os sintomas, mantendo uma dieta equilibrada e saudável.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Câncer Colorretal"
-                  description="O câncer colorretal é um tipo de câncer que afeta o cólon ou o reto. Pode se desenvolver a partir de pólipos pré-cancerígenos. Os sintomas incluem mudanças nos hábitos intestinais, sangramento retal, dor abdominal e perda de peso. O diagnóstico precoce é crucial para o tratamento eficaz."
+                  title="Doença Celíaca"
+                  description={`A doença celíaca é uma condição autoimune desencadeada pela ingestão de glúten, uma proteína encontrada no trigo, cevada e centeio. Os sintomas variam e podem incluir diarreia, inchaço, dor abdominal, fadiga e perda de peso e manifestações extra intestinais. O diagnóstico é feito inicialmente através de exames de sangue que detectam anticorpos específicos. Uma biópsia do intestino delgado, realizada durante uma endoscopia, é frequentemente necessária para confirmar o diagnóstico.
+
+                  O único tratamento efetivo para a doença celíaca é uma dieta estritamente sem glúten por toda a vida. Isso envolve evitar todos os alimentos que contêm trigo, cevada e centeio. Muitos alimentos processados podem conter glúten oculto, então é importante ler os rótulos cuidadosamente. Alimentos naturalmente sem glúten incluem frutas, legumes, carne, peixe, arroz e milho.
+
+                  Adotar uma dieta sem glúten geralmente leva à melhora dos sintomas e à recuperação do intestino. Pode ser recomendável consultar um nutricionista para garantir que a dieta seja nutricionalmente equilibrada e para obter orientações sobre como evitar o glúten.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
                 <Acordeon.Item
-                  title="Pancreatite Aguda e Crônica"
-                  description="A pancreatite é a inflamação do pâncreas. A forma aguda pode ser causada por cálculos biliares, alcoolismo ou infecções. A pancreatite crônica é uma condição progressiva que resulta em danos permanentes ao pâncreas, afetando a digestão e o controle do açúcar no sangue."
+                  title="Síndrome do supercrescimento bacteriano"
+                  description={`A síndrome de supercrescimento bacteriano é uma condição onde bactérias em excesso se acumulam no intestino delgado, causando sintomas como inchaço, gases, diarréia e perda de peso. O diagnóstico muitas vezes é feito com base nos sintomas e pode ser confirmado por um teste de hidrogênio expirado, que detecta gases produzidos pelas bactérias.
+
+                  O tratamento geralmente envolve antibióticos para reduzir o número de bactérias no intestino delgado. Mudanças na dieta, como a redução de alimentos ricos em fibras e açúcares que alimentam as bactérias, também podem ser recomendadas. Em alguns casos, pode ser necessário tratar condições subjacentes, como a doença do refluxo gastroesofágico ou a doença celíaca, que podem contribuir para o supercrescimento bacteriano.
+
+                  A gestão dessa condição pode exigir ajustes de longo prazo na dieta e, às vezes, tratamentos repetidos com antibióticos. Acompanhamento médico é importante para monitorar a resposta ao tratamento e ajustar conforme necessário.
+                  `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
               </Acordeon.Root>
@@ -110,7 +137,7 @@ export default function Hepatologia() {
         </div>
         <div>
           <DivSections />
-          <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
+          <div className="lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
         </div>
       </section>
       <section className="h-auto bg-bannerSectionEspecialidades bg-no-repeat bg-right">
@@ -121,60 +148,94 @@ export default function Hepatologia() {
           <div className="py-10 flex flex-col space-y-10 text-center lg:text-left">
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Quais são os sintomas de uma doença do refluxo gastroesofágico
-                (DRGE) e como é tratada?
+                Qual é o tratamento clínico para o refluxo gastroesofágico?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                Os sintomas da DRGE incluem azia, regurgitação ácida, dor no
-                peito e tosse crônica. O tratamento pode envolver mudanças no
-                estilo de vida, como ajustes na dieta e elevação da cabeceira da
-                cama. Medicamentos antiácidos e inibidores de bomba de prótons
-                também são comumente prescritos para controlar a produção de
-                ácido estomacal.
+                O tratamento clínico do refluxo gastroesofágico inclui mudanças
+                no estilo de vida, como evitar alimentos que desencadeiam os
+                sintomas, não comer antes de deitar e elevar a cabeceira da
+                cama. Medicamentos como antiácidos, bloqueadores H2 e inibidores
+                da bomba de prótons (IBP) são frequentemente usados para reduzir
+                a acidez estomacal e aliviar os sintomas.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Qual é a diferença entre doença de Crohn e colite ulcerativa?
+                O que é disbiose intestinal e como é tratada?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                A doença de Crohn e a colite ulcerativa são ambas doenças
-                inflamatórias intestinais (DII), mas têm diferenças
-                significativas. A doença de Crohn pode afetar qualquer parte do
-                trato digestivo, desde a boca até o ânus, com áreas de
-                inflamação intercaladas com áreas saudáveis. Já a colite
-                ulcerativa afeta apenas o cólon e o reto, causando inflamação
-                contínua e úlceras superficiais na mucosa. Os sintomas e
-                tratamentos podem variar, razão pela qual um diagnóstico preciso
-                é essencial.
+                Disbiose intestinal é um desequilíbrio das bactérias do
+                intestino. O tratamento inclui a adoção de uma dieta
+                equilibrada, rica em fibras e probióticos, que ajudam a
+                restaurar a flora intestinal saudável. Em alguns casos, pode ser
+                necessário o uso de antibióticos ou suplementos probióticos.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Quando devo fazer uma colonoscopia e como me preparar para o
-                exame?
+                Quais são os efeitos do uso crônico de inibidores da bomba de
+                prótons?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                A colonoscopia é geralmente recomendada para rastreamento de
-                câncer colorretal, especialmente em indivíduos com mais de 50
-                anos. Pode ser indicada mais cedo para pessoas com histórico
-                familiar de câncer colorretal ou em casos de sintomas
-                gastrointestinais específicos. A preparação para o exame envolve
-                seguir uma dieta especial e tomar laxantes para limpar o cólon,
-                permitindo uma visualização clara durante o procedimento.
+                O uso prolongado de inibidores da bomba de prótons pode estar
+                associado a efeitos colaterais como aumento do risco de
+                infecções intestinais, deficiência de vitaminas (como B12 e
+                magnésio) e, em casos raros, problemas renais. É importante que
+                o uso desses medicamentos seja monitorado por um médico e
+                limitado ao necessário.
               </p>
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Mais perguntas...
+                O que é a síndrome do intestino irritável (SII) e como é
+                tratada?
               </h4>
               <p className="text-blue text-sm font-source leading-heading font-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo con. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatu lorem ipsum
-                dolor sit amet.
+                A síndrome do intestino irritável é um distúrbio
+                gastrointestinal crônico caracterizado por sintomas como dor
+                abdominal, inchaço, constipação e/ou diarreia. O tratamento
+                envolve mudanças na dieta, como aumentar a ingestão de fibras e
+                evitar alimentos desencadeadores, além de medicamentos para
+                aliviar a dor, a constipação ou a diarreia. O manejo do estresse
+                também é importante.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-4">
+              <h4 className="text-red-200 text-lg font-merriweather font-bold">
+                O que é a síndrome do intestino irritável (SII) e como é
+                tratada?
+              </h4>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                A doença celíaca é uma reação autoimune ao glúten. O diagnóstico
+                é feito através de exames de sangue e confirmado por biópsia
+                intestinal. O tratamento principal é uma dieta estritamente sem
+                glúten, o que ajuda a aliviar os sintomas e prevenir
+                complicações a longo prazo.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-4">
+              <h4 className="text-red-200 text-lg font-merriweather font-bold">
+                O que é a gastrite e como ela é tratada?
+              </h4>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                Gastrite é a inflamação do revestimento do estômago. Pode ser
+                causada por infecções, como a bactéria Helicobacter pylori, uso
+                prolongado de anti-inflamatórios não esteroides, ou pelo consumo
+                excessivo de álcool. O tratamento depende da causa, mas pode
+                incluir antibióticos, medicamentos para reduzir a acidez
+                estomacal e mudanças na dieta.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-4">
+              <h4 className="text-red-200 text-lg font-merriweather font-bold">
+                Como é tratada a constipação crônica?
+              </h4>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                A constipação crônica é tratada com mudanças na dieta, incluindo
+                aumento da ingestão de fibras e líquidos. Exercícios físicos
+                regulares também ajudam. Em alguns casos, podem ser prescritos
+                laxantes ou outros medicamentos para estimular o movimento
+                intestinal
               </p>
             </div>
           </div>
@@ -192,13 +253,7 @@ export default function Hepatologia() {
           <div className=" lg:hidden  bg-line bg-center bg-no-repeat w-full h-1" />
         </div>
       </section>
-      <SectionEspecialidades
-        urlImg="/especialidades/figado.png"
-        urlLink="/especialidades/hepatologia"
-        altImg="image de um figado"
-        title="Hepatologia - Doenças do Fígado "
-        description="No Instituto Dr. Fábio Crescentini, a excelência na Cirurgia do Aparelho Digestivo é uma missão que redefine padrões de cuidado. Sob a liderança visionária do Dr. Fábio Crescentini, nosso instituto é reconhecido por oferecer soluções cirúrgicas avançadas e personalizadas para uma variedade de condições gastrointestinais."
-      />
+      <SectionEspecialidades defaultOption="hepatologia" />
     </main>
   )
 }
