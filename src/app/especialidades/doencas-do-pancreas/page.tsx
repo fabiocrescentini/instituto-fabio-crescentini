@@ -144,7 +144,7 @@ export default function Hepatologia() {
           <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
             Dúvidas Frequentes
           </h2>
-          <div className="py-10 flex flex-col space-y-10 text-center lg:text-left">
+          <div className="py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-5 text-center lg:text-left">
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
                 O que é colelitíase e quais são seus sintomas?
@@ -158,39 +158,7 @@ export default function Hepatologia() {
                 bloquearem os ductos biliares o que leva a icterícia.
               </p>
             </div>
-            <div className="flex flex-col space-y-4">
-              <h4 className="text-red-200 text-lg font-merriweather font-bold">
-                Todo tumor no pâncreas é maligno?
-              </h4>
-              <p className="text-blue text-sm font-source leading-heading font-light">
-                Não, nem todo tumor de pâncreas é maligno. Existem tanto tumores
-                benignos quanto malignos no pâncreas. Porém tumores malignos do
-                pâncreas são mais comuns e preocupantes. O tipo mais frequente é
-                o adenocarcinoma ductal, que representa cerca de 85% de todos os
-                casos de câncer de pâncreas. Este tipo se origina nas células
-                que revestem os ductos pancreáticos.
-              </p>
-              <p className="text-blue text-sm font-source leading-heading font-light">
-                Além do adenocarcinoma ductal, existem outros tipos menos comuns
-                de tumores malignos no pâncreas, incluindo: Tumores
-                neuroendócrinos pancreáticos, carcinoma acinar, carcinoma
-                adenosquamoso, carcinoma de células em anel de sinete e
-                carcinoma de células gigantes, que são tipos muito raros de
-                câncer de pâncreas.
-              </p>
-              <p className="text-blue text-sm font-source leading-heading font-light">
-                Por outro lado, existem também tumores benignos do pâncreas,
-                como cistodenomas serosos e tumores neuroendócrinos não
-                funcionais. Embora estes não sejam cancerosos, podem necessitar
-                de acompanhamento ou tratamento, dependendo do tamanho,
-                localização e possíveis sintomas que causam.
-              </p>
-              <p className="text-blue text-sm font-source leading-heading font-light">
-                É importante notar que, mesmo os tumores pancreáticos benignos,
-                podem, em algumas circunstâncias, apresentar riscos à saúde e
-                requerem avaliação médica adequada.
-              </p>
-            </div>
+
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
                 O que é um Tumor de Klatskin?
@@ -227,6 +195,39 @@ export default function Hepatologia() {
                 abdômen superior, náuseas e vômitos. O tratamento envolve
                 repouso, tratamento da dor, hidratação intravenosa e, em alguns
                 casos, alimentação por sonda ou cirurgia.
+              </p>
+            </div>
+            <div className="flex flex-col space-y-4">
+              <h4 className="text-red-200 text-lg font-merriweather font-bold">
+                Todo tumor no pâncreas é maligno?
+              </h4>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                Não, nem todo tumor de pâncreas é maligno. Existem tanto tumores
+                benignos quanto malignos no pâncreas. Porém tumores malignos do
+                pâncreas são mais comuns e preocupantes. O tipo mais frequente é
+                o adenocarcinoma ductal, que representa cerca de 85% de todos os
+                casos de câncer de pâncreas. Este tipo se origina nas células
+                que revestem os ductos pancreáticos.
+              </p>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                Além do adenocarcinoma ductal, existem outros tipos menos comuns
+                de tumores malignos no pâncreas, incluindo: Tumores
+                neuroendócrinos pancreáticos, carcinoma acinar, carcinoma
+                adenosquamoso, carcinoma de células em anel de sinete e
+                carcinoma de células gigantes, que são tipos muito raros de
+                câncer de pâncreas.
+              </p>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                Por outro lado, existem também tumores benignos do pâncreas,
+                como cistodenomas serosos e tumores neuroendócrinos não
+                funcionais. Embora estes não sejam cancerosos, podem necessitar
+                de acompanhamento ou tratamento, dependendo do tamanho,
+                localização e possíveis sintomas que causam.
+              </p>
+              <p className="text-blue text-sm font-source leading-heading font-light">
+                É importante notar que, mesmo os tumores pancreáticos benignos,
+                podem, em algumas circunstâncias, apresentar riscos à saúde e
+                requerem avaliação médica adequada.
               </p>
             </div>
           </div>

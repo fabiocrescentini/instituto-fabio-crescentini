@@ -145,7 +145,7 @@ export default function Hepatologia() {
           <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
             Dúvidas Frequentes
           </h2>
-          <div className="py-10 flex flex-col space-y-10 text-center lg:text-left">
+          <div className="py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-5 text-center lg:text-left">
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
                 Qual é o tratamento clínico para o refluxo gastroesofágico?

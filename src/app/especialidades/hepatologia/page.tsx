@@ -105,9 +105,9 @@ export default function Hepatologia() {
                   title="Cirrose Hepática"
                   description={`A cirrose é uma condição crônica onde o tecido normal do fígado é substituído por tecido cicatricial, afetando a função hepática. É comumente causada pelo consumo excessivo de álcool, hepatite crônica e doenças hepáticas gordurosas. Os sintomas incluem fadiga, perda de apetite, icterícia (amarelamento da pele e olhos) e acúmulo de líquido no abdômen.
 
-O diagnóstico é feito através de exames de sangue, que avaliam a função hepática, e exames de imagem, como ultrassonografia, tomografia ou ressonância magnética. Uma biópsia hepática também pode ser realizada para confirmar a cirrose.
+                  O diagnóstico é feito através de exames de sangue, que avaliam a função hepática, e exames de imagem, como ultrassonografia, tomografia ou ressonância magnética. Uma biópsia hepática também pode ser realizada para confirmar a cirrose.
 
-Não há cura para a cirrose, mas o tratamento visa controlar os sintomas e prevenir complicações. Isso inclui evitar álcool, manter uma dieta saudável, e usar medicamentos para gerenciar sintomas específicos, como diuréticos para reduzir o acúmulo de líquido. Em casos avançados, pode ser necessário um transplante de fígado. É importante o acompanhamento regular com um médico para monitorar a progressão da doença e adaptar o tratamento conforme necessário.
+                  Não há cura para a cirrose, mas o tratamento visa controlar os sintomas e prevenir complicações. Isso inclui evitar álcool, manter uma dieta saudável, e usar medicamentos para gerenciar sintomas específicos, como diuréticos para reduzir o acúmulo de líquido. Em casos avançados, pode ser necessário um transplante de fígado. É importante o acompanhamento regular com um médico para monitorar a progressão da doença e adaptar o tratamento conforme necessário.
 `}
                 />
                 <div className="h-[1px] w-full bg-pink-100" />
@@ -163,7 +163,7 @@ Não há cura para a cirrose, mas o tratamento visa controlar os sintomas e prev
           <h2 className="font-merriweather text-xl lg:text-1xl text-red-700 font-bold text-center">
             Dúvidas Frequentes
           </h2>
-          <div className="py-10 flex flex-col space-y-10 text-center lg:text-left">
+          <div className="py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-5 text-center lg:text-left">
             <div className="flex flex-col space-y-4">
               <h4 className="text-red-200 text-lg font-merriweather font-bold">
                 Quais são os tumores hepáticos mais frequentes?
