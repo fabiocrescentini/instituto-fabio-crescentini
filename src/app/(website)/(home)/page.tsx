@@ -25,18 +25,7 @@ export const metadata: Metadata = {
 export default function Home() {
   const awardsArray = awards
   const recommendationsArray = recommendations
-  function formatNumber(number: number) {
-    // Converte o número para uma string
-    const numberString = number.toString()
-    // Verifica se o número tem separadores de milhares
-    if (numberString.includes('.')) {
-      // Se tiver, retorna o número sem alterações
-      return numberString
-    } else {
-      // Se não tiver, divide o número em grupos de 3 dígitos e os separa com pontos
-      return numberString.replace(/\B(?=(\d{3})+(?!\d))/g, '.')
-    }
-  }
+
   return (
     <main className="w-full min-h-screen py-0 ">
       <section className="mt-5 lg:mt-24 h-auto lg:bg-banner bg-cover bg-no-repeat">
@@ -76,9 +65,7 @@ export default function Home() {
               <div className="flex justify-around  items-center w-full h-full">
                 <div className="flex flex-col items-center ">
                   <h5 className="text-red-200 font-inter text-xl lg:text-[2.5rem] font-medium">
-                    <span className="animate-[counter_1s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-specilty)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-                      <span className="sr-only">8</span>
-                    </span>
+                    8
                   </h5>
                   <p className="text-blue font-inter font-bold text-[0.75rem] lg:text-sm">
                     Especializações
@@ -91,9 +78,7 @@ export default function Home() {
 
                 <div className="flex flex-col items-center">
                   <h5 className="text-red-200 font-inter text-xl lg:text-[2.5rem]  font-medium">
-                    <span className="animate-[counter_1s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-years)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-                      <span className="sr-only">20</span>
-                    </span>
+                    20
                   </h5>
                   <p className="text-blue font-inter font-bold text-[0.75rem] lg:text-sm">
                     Anos de Experiência
@@ -109,10 +94,7 @@ export default function Home() {
               <div className="flex justify-around items-center w-full h-full">
                 <div className="flex flex-col items-center">
                   <h5 className="text-red-200 font-inter text-xl lg:text-[2.5rem] font-medium">
-                    +{''}
-                    <span className="animate-[counter_1s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-transactions)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 10))]">
-                      <span className="sr-only">50</span>.000
-                    </span>
+                    +50.000
                   </h5>
                   <p className="text-blue font-inter font-bold text-[0.75rem] lg:text-sm">
                     Pacientes atendidos
@@ -123,10 +105,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col items-center">
                   <h5 className="text-red-200 font-inter text-xl lg:text-[2.5rem]  font-medium">
-                    +{''}
-                    <span className="animate-[counter_1s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-users)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-                      <span className="sr-only">4</span>.000
-                    </span>
+                    +4.000
                   </h5>
                   <p className="text-blue font-inter font-bold text-[0.75rem] lg:text-sm">
                     Cirurgias realizadas
@@ -223,7 +202,7 @@ export default function Home() {
                   <h5 className="font-merriweather font-bold text-red-700 text-lg">
                     Acompanhe nossas Redes Sociais
                   </h5>
-                  <div className="flex gap-1 pt-5">
+                  <div className="flex gap-3 pt-5">
                     <RoundIcon
                       variant="red"
                       icon={FaInstagram}
