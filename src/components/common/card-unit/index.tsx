@@ -13,7 +13,7 @@ export function CardUnit({ url, title }: CardUnitProps) {
         alt={title}
         width={500}
         height={330}
-        className="rounded-md shadow-md w-full w- lg:w-[31.25rem] h-[20.625rem]"
+        className="rounded-md shadow-md w-full h-auto lg:w-[31.25rem] lg:h-[20.625rem]"
       />
       <span className="text-blue text-sm font-source font-light">{title}</span>
     </div>

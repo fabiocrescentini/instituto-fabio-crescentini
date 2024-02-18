@@ -43,7 +43,7 @@ export function MenuMob() {
                 animate={{ x: 0 }}
                 exit={{ x: '100vw' }}
                 transition={{ duration: 0.5 }}
-                className="bg-yellow-100 rounded-l-lg px-6 py-9 w-[87%] h-screen  flex flex-col justify-between items-end"
+                className="bg-yellow-100 rounded-l-lg px-6 py-9 w-[87%] h-[93%]  flex flex-col justify-between items-end"
                 onClick={(e) => e.stopPropagation()}
               >
                 <div>

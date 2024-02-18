@@ -47,7 +47,7 @@ export function SectionEspecialidades({
         <div className="lg:container mt-14">
           <div className=" flex flex-wrap items-start justify-around  lg:px-8 gap-x-10 gap-y-10 lg:gap-y-0">
             <div
-              className="flex flex-col items-center h-auto w-44  group"
+              className="flex flex-col items-center h-auto w-44  group cursor-pointer"
               onClick={() => setSelectedSpecialty('hepatologia')}
             >
               <Image
@@ -62,7 +62,7 @@ export function SectionEspecialidades({
               </span>
             </div>
             <div
-              className="flex flex-col items-center h-auto w-44 group"
+              className="flex flex-col items-center h-auto w-44 group cursor-pointer"
               onClick={() => setSelectedSpecialty('doecas-do-pancreas')}
             >
               <Image
@@ -73,11 +73,11 @@ export function SectionEspecialidades({
                 className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
               />
               <span className="text-red-700 font-merriweather font-bold text-sm text-center group-hover:text-red-200">
-                Doenças do Pâncreas e via biliar
+                Doenças do Pâncreas e Via Biliar
               </span>
             </div>
             <div
-              className="flex flex-col items-center h-auto w-44 group"
+              className="flex flex-col items-center h-auto w-44 group cursor-pointer"
               onClick={() =>
                 setSelectedSpecialty('cirurgia-aparelho-digestivo')
               }
@@ -94,7 +94,7 @@ export function SectionEspecialidades({
               </span>
             </div>
             <div
-              className="flex flex-col items-center h-auto w-44 group"
+              className="flex flex-col items-center h-auto w-44 group cursor-pointer"
               onClick={() => setSelectedSpecialty('gastroenterologia')}
             >
               <Image

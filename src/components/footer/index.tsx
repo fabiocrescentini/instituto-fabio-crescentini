@@ -12,10 +12,10 @@ export function Footer() {
       <div className=" lg:container px-5 h-full flex flex-col items-center lg:items-stretch  lg:flex-row justify-between">
         <div className="flex  justify-center items-center pt-6 lg:pt-0 ml-0 lg:after:ml-10 lg:after:content-[''] lg:after:w-[1px] lg:after:h-full lg:after:bg-red-200 order-2 lg:order-1">
           <div className="flex flex-col space-y-6 items-center justify-center ">
-            <div className=" order-2 lg:order-1 pt-5">
+            <div className=" order-2 lg:order-1 pt-3">
               <Logo />
             </div>
-            <div className="flex space-x-1.5 order-1 lg:order-2">
+            <div className="flex gap-3 lg:gap-0 space-x-1.5 order-1 lg:order-2">
               <RoundIcon
                 icon={FaInstagram}
                 href="https://www.instagram.com/InstitutoFabioCrescentini/"

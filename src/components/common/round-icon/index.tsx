@@ -10,11 +10,13 @@ const button = tv({
         'bg-yellow-50 text-red-700',
         'group-hover:text-red-300',
         'transition-all duration-300 ease-in-out',
+        'lg:h-8 lg:w-8 h-10 w-10',
       ],
       red: [
         'bg-red-700 text-yellow-50',
         'group-hover:bg-red-300',
         'transition-all duration-300 ease-in-out',
+        'lg:h-8 lg:w-8 h-9 w-9',
       ],
       green: [
         'bg-[#25D366] text-yellow-50 h-auto w-auto p-1.5',
