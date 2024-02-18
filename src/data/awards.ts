@@ -32,7 +32,7 @@ export const awards: IAwards[] = [
   {
     title: 'Prêmio Revista Einstein',
     subTitle: 'Categoria Medicina Cirúrgica',
-    description: 'Hospital Israelita Albert Einsteina',
+    description: 'Hospital Israelita Albert Einstein',
     date: 'São Paulo, 2008',
   },
   {
