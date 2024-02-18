@@ -48,7 +48,10 @@ export default function Sobre() {
             </div>
             <div className="h-auto mt-14 flex justify-center">
               <div className=" flex flex-wrap items-start justify-around lg:px-8 gap-x-10 gap-y-10 lg:gap-y-0 ">
-                <Link href="/especialidades/hepatologia" className="group">
+                <Link
+                  href="/especialidades/hepatologia"
+                  className="group cursor-pointer"
+                >
                   <div className="flex flex-col items-center h-auto w-44  ">
                     <Image
                       src="/sistema-digestivo/image-1.png"
@@ -64,7 +67,7 @@ export default function Sobre() {
                 </Link>
                 <Link
                   href="/especialidades/doencas-do-pancreas"
-                  className="group"
+                  className="group cursor-pointer"
                 >
                   <div className="flex flex-col items-center h-auto w-44">
                     <Image
@@ -75,13 +78,13 @@ export default function Sobre() {
                       className="w-[80px] h-[80px] lg:w-auto lg:h-auto"
                     />
                     <span className="text-red-700 font-merriweather font-bold text-sm text-center group-hover:text-red-200">
-                      Doenças do Pâncreas e via biliar
+                      Doenças do Pâncreas e Via Biliar
                     </span>
                   </div>
                 </Link>
                 <Link
                   href="/especialidades/cirurgia-aparelho-digestivo"
-                  className="group"
+                  className="group cursor-pointer"
                 >
                   <div className="flex flex-col items-center h-auto w-44">
                     <Image
@@ -98,7 +101,7 @@ export default function Sobre() {
                 </Link>
                 <Link
                   href={`/especialidades/oncologia-cirurgica`}
-                  className="group"
+                  className="group cursor-pointer"
                 >
                   <div className="flex flex-col items-center h-auto w-44">
                     <Image
