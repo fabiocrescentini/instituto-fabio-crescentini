@@ -5,4 +5,5 @@ export interface Specialty {
   urlImg: string
   altImg: string
   urlLink: string
+  gtag_conversion: () => void
 }

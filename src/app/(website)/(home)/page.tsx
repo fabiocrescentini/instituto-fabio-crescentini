@@ -17,6 +17,7 @@ import { FaInstagram, FaYoutube, FaFacebookF, FaWhatsapp } from 'react-icons/fa'
 
 import { FaLocationDot } from 'react-icons/fa6'
 import { MdOutlinePhoneIphone, MdEmail } from 'react-icons/md'
+import Contact from '@/components/common/contact/Contact'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -42,10 +43,11 @@ export default function Home() {
             </p>
 
             <div className="pt-12 hidden lg:flex">
-              <Button.Root href="https://linktr.ee/drfabiocrescentini">
+              {/* <Button.Root href="https://linktr.ee/drfabiocrescentini">
                 <Button.Text>Agendar uma consulta</Button.Text>
                 <Button.Icon icon={FaWhatsapp} size={25} />
-              </Button.Root>
+              </Button.Root> */}
+              <Contact />
             </div>
           </div>
 
@@ -134,7 +136,7 @@ export default function Home() {
             Contato Instituto Fábio Crescentini
           </h3>
           <div className="flex w-full flex-col  lg:flex-row lg:flex-wrap justify-between gap-10 lg:gap-24 items-center lg:items-start">
-            <div className="flex flex-col space-y-5 w-full lg:w-auto ">
+            {/* <div className="flex flex-col space-y-5 w-full lg:w-auto ">
               <div className="flex justify-center lg:justify-start  items-center gap-2 font-merriweather font-bold text-red-700 text-lg lg:text-xl border-b-[1px] border-gray-200 w-full lg:w-auto">
                 <FaLocationDot size={20} className="h-5 lg:h-10" />
                 <h4>Unidade - São Paulo</h4>
@@ -157,7 +159,7 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="flex flex-col space-y-5 w-full lg:w-auto">
               <div className="flex justify-center lg:justify-start items-center gap-2 font-merriweather font-bold text-red-700 text-lg lg:text-xl w-full lg:w-auto border-b-[1px] border-gray-200">
                 <FaLocationDot size={20} className="h-5 lg:h-10" />

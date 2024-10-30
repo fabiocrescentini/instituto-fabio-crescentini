@@ -10,6 +10,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { IAwards } from '@/data/types/awards'
 import { useRef } from 'react'
 import { usePathname } from 'next/navigation'
+import Contact from '../common/contact/Contact'
 
 interface SectionInfoProps {
   awards: IAwards[]
@@ -78,18 +79,18 @@ export function SectionInfo({ awards }: SectionInfoProps) {
             </p>
           </div>
           <div className="justify-center lg:justify-start flex pt-5">
-            <Button.Root
-              href={
-                pathname === '/'
-                  ? '/sobre'
-                  : 'https://linktr.ee/drfabiocrescentini'
-              }
-            >
-              <Button.Text>
-                {pathname === '/' ? 'Saiba mais' : 'Agendar uma consulta'}
-              </Button.Text>
-              <Button.Icon icon={pathname === '/' ? ArrowRight : FaWhatsapp} />
-            </Button.Root>
+            {/* <Button.Root href={pathname === "/" ? "/sobre" : "https://linktr.ee/drfabiocrescentini"}>
+              <Button.Text>{pathname === "/" ? "Saiba mais" : "Agendar uma consulta"}</Button.Text>
+              <Button.Icon icon={pathname === "/" ? ArrowRight : FaWhatsapp} />
+            </Button.Root> */}
+            {pathname === '/' ? (
+              <Button.Root href="/sobre">
+                <Button.Text>Saiba mais</Button.Text>
+                <Button.Icon icon={ArrowRight} />
+              </Button.Root>
+            ) : (
+              <Contact />
+            )}
           </div>
         </div>
       </div>

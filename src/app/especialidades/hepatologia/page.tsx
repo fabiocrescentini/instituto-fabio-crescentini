@@ -10,6 +10,7 @@ import Image from 'next/image'
 import { Acordeon } from '@/components/common/acordeon'
 import { SectionEspecialidades } from '@/components/sections/especialidades'
 import { Metadata } from 'next'
+import Contact from './Contact'
 
 export const metadata: Metadata = {
   title: 'Hepatologia',
@@ -35,7 +36,7 @@ export default function Hepatologia() {
       <section className="h-auto bg-gradientEspecialidades bg-center bg-cover bg-no-repeat">
         <div className="container px-5 py-20 grid grid-cols-1 lg:grid-cols-2 gap-5 ">
           <div className=" w-full lg:w-[50%]">
-            <Video videoId="JwlhvApRQ9c" />
+            <Video videoId="1erTdH0B9OqhY5xrcOeGJC4F78zKpUN2W" />
           </div>
           <div className="w-[auto] flex-col space-y-8 text-center lg:text-left">
             <h2 className="font-merriweather text-[2rem] text-red-700 font-bold pt-6">
@@ -234,10 +235,11 @@ export default function Hepatologia() {
           </div>
           <div className="w-full flex justify-center pt-4 lg:pt-16">
             <div className="flex pt-3 justify-center lg:justify-start">
-              <Button.Root href="https://linktr.ee/drfabiocrescentini">
+              {/* <Button.Root href="https://linktr.ee/drfabiocrescentini">
                 <Button.Text>Agendar uma consulta</Button.Text>
                 <Button.Icon icon={FaWhatsapp} />
-              </Button.Root>
+              </Button.Root> */}
+              <Contact />
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@ import { SectionUnits } from '@/components/sections/units'
 import { units } from '@/data/units'
 import { Metadata } from 'next'
 import Link from 'next/link'
+import Contact from '@/components/common/contact/Contact'
 
 export const metadata: Metadata = {
   title: 'Sobre',
@@ -270,10 +271,11 @@ export default function Sobre() {
                 confiança durante toda a jornada de cuidados de saúde.
               </p>
               <div className="flex lg:justify-start justify-center pt-5 lg:pt-0">
-                <Button.Root href="https://linktr.ee/drfabiocrescentini">
+                {/* <Button.Root href="https://linktr.ee/drfabiocrescentini">
                   <Button.Text>Agendar uma consulta</Button.Text>
                   <Button.Icon icon={FaWhatsapp} size={25} />
-                </Button.Root>
+                </Button.Root> */}
+                <Contact />
               </div>
             </div>
           </div>

@@ -59,7 +59,8 @@ export function Carousel<T>({
             }}
             effect={'fade'}
             modules={[Pagination, Autoplay, Navigation]}
-            slidesPerView={lg ? (sm ? 1 : 2) : 3}
+            // slidesPerView={lg ? (sm ? 1 : 2) : 3}
+            slidesPerView={lg ? (sm ? 1 : 2) : items.length > 2 ? 3 : 2}
             slidesPerGroup={1}
             loop={true}
             ref={swiperRef}

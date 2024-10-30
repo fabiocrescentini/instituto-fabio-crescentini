@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ButtonHTMLAttributes } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
+import { RoundIconLink } from './RoundIconLink'
 
 const button = tv({
   base: [`h-8 w-8 flex justify-center items-center rounded-full`],
@@ -45,15 +46,21 @@ export function RoundIcon({
   size = 20,
   ...props
 }: RoundIconProps) {
+  const iconElement = <Icon size={size} />
   return (
     <div className="group" {...props}>
-      <Link
+      {/* <Link
         href={href}
         className={button({ variant, className })}
         target="_blank"
       >
         <Icon size={size} />
-      </Link>
+      </Link> */}
+      <RoundIconLink
+        href={href}
+        className={button({ variant, className }) || ''}
+        iconElement={iconElement} // Passa o elemento já renderizado
+      />
     </div>
   )
 }

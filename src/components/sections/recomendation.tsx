@@ -9,6 +9,7 @@ import { Carousel } from '../common/carousel'
 import { IRecommendations } from '@/data/types/recommendations'
 import { useRef } from 'react'
 import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri'
+import Contact from '../common/contact/Contact'
 
 interface SectionRecomendationProps {
   recommendations: IRecommendations[]
@@ -46,10 +47,11 @@ export function SectionRecomendation({
         </div>
 
         <div className="pt-3">
-          <Button.Root href="https://linktr.ee/drfabiocrescentini">
+          {/* <Button.Root href="https://linktr.ee/drfabiocrescentini">
             <Button.Text>Agendar uma consulta</Button.Text>
             <Button.Icon icon={FaWhatsapp} size={25} />
-          </Button.Root>
+          </Button.Root> */}
+          <Contact />
         </div>
       </div>
       <div className="pt-16 lg:pt-10">

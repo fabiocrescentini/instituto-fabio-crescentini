@@ -7,6 +7,7 @@ import { DivSections } from '../common/div-sections'
 import { useState } from 'react'
 import { Specialty } from '@/data/types/specialty'
 import { especialidades } from '@/data/specialty'
+import Contact from '../analytics/Contact'
 
 interface SectionEspecialidadesProps {
   defaultOption?:
@@ -136,10 +137,11 @@ export function SectionEspecialidades({
                       <Button.Text>Saiba mais</Button.Text>
                       <Button.Icon icon={ArrowRight} />
                     </Button.Root>
-                    <Button.Root href="https://linktr.ee/drfabiocrescentini">
+                    {/* <Button.Root href="https://linktr.ee/drfabiocrescentini">
                       <Button.Text>Agendar uma consulta</Button.Text>
                       <Button.Icon icon={FaWhatsapp} size={25} />
-                    </Button.Root>
+                    </Button.Root> */}
+                    <Contact specialty={selectedSpecialtyData} />
                   </div>
                 </div>
               </div>

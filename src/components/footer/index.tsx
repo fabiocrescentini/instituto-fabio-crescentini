@@ -37,7 +37,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col lg:flex-row text-center lg:text-left justify-evenly items-center lg:items-baseline lg:flex-wrap w-full space-y-6 order-1 lg:order-2 ">
-          <div className="lg:ml-10 space-y-4 ">
+          {/* <div className="lg:ml-10 space-y-4 ">
             <div className="flex gap-2 items-center text-yellow-400 font-merriweather text-md font-bold">
               <FaLocationDot size={20} />
               <h3>Unidade - São Paulo</h3>
@@ -66,7 +66,7 @@ export function Footer() {
                 contato@institutofabiocrescentini.com.br
               </span>
             </div>
-          </div>
+          </div> */}
           <div className="space-y-4 ">
             <div className="flex gap-2 justify-center lg:justify-stretch items-center text-yellow-400 font-merriweather text-md font-bold">
               <FaLocationDot size={20} />
