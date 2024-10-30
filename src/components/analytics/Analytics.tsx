@@ -1,9 +1,12 @@
-import Script from "next/script";
+import Script from 'next/script'
 
 export default function Analytics() {
   return (
     <>
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=AW-11343896790`} strategy="afterInteractive" />
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=AW-11343896790`}
+        strategy="afterInteractive"
+      />
       <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -99,5 +102,5 @@ export default function Analytics() {
         `}
       </Script>
     </>
-  );
+  )
 }
